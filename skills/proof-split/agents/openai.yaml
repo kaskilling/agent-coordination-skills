@@ -1,0 +1,4 @@
+interface:
+  display_name: "Proof Split"
+  short_description: "Parallel proof surfaces, one synthesized result"
+  default_prompt: "Use $proof-split to divide this investigation across independent proof surfaces and synthesize one evidence-backed conclusion."

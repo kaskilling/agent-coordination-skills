@@ -1,0 +1,4 @@
+interface:
+  display_name: "Peer Deliberation"
+  short_description: "Direct peer exchange for evidence-backed decisions"
+  default_prompt: "Use $peer-deliberation to have two agents challenge this question directly and reconcile their conclusions."

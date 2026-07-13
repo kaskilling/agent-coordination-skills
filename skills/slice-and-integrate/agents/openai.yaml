@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slice and Integrate"
+  short_description: "Build vertical slices under one integration contract"
+  default_prompt: "Use $slice-and-integrate to build independent vertical slices and integrate them under one contract."

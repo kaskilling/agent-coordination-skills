@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hypothesis Duel"
+  short_description: "Competing causes tested through falsification"
+  default_prompt: "Use $hypothesis-duel to test rival explanations with discriminating evidence and identify the surviving cause."

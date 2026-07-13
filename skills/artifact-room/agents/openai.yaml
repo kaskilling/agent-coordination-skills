@@ -1,0 +1,4 @@
+interface:
+  display_name: "Artifact Room"
+  short_description: "Govern multi-agent work in one shared artifact"
+  default_prompt: "Use $artifact-room to coordinate contributors through one governed canonical artifact."

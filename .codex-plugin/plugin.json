@@ -1,0 +1,37 @@
+{
+  "name": "agent-coordination-skills",
+  "version": "0.2.0",
+  "description": "Focused coordination strategies for agent teams, from peer deliberation and blind arbitration to proof splitting, handoffs, and integration.",
+  "author": {
+    "name": "Mohamad Kamar",
+    "url": "https://github.com/Mohamad-Kamar"
+  },
+  "homepage": "https://github.com/kaskilling/agent-coordination-skills",
+  "repository": "https://github.com/kaskilling/agent-coordination-skills",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "multi-agent",
+    "subagents",
+    "coordination",
+    "review",
+    "orchestration"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Coordination Skills",
+    "shortDescription": "Focused, evidence-backed strategies for coordinating agent teams",
+    "longDescription": "Choose a precise collaboration strategy for direct peer dialogue, blind adjudication, parallel proof, causal falsification, shared artifacts, gated handoffs, vertical slices, or adversarial review.",
+    "developerName": "kaskilling",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/kaskilling/agent-coordination-skills",
+    "defaultPrompt": [
+      "Choose the smallest agent coordination strategy that fits this task and run it with explicit proof and stop conditions."
+    ]
+  }
+}
