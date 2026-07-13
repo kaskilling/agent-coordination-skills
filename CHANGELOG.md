@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 - 2026-07-13
+
+- Add a compact usage guide with selection advice and copy-ready prompts for all
+  eight coordination strategies.
+
 ## 0.2.0 - 2026-07-13
 
 - Expand `second-round` into a cohesive eight-skill agent coordination collection.

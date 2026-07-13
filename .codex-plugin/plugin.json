@@ -1,6 +1,6 @@
 {
   "name": "agent-coordination-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Focused coordination strategies for agent teams, from peer deliberation and blind arbitration to proof splitting, handoffs, and integration.",
   "author": {
     "name": "Mohamad Kamar",

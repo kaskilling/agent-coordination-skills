@@ -6,6 +6,8 @@ an unstructured swarm.
 Each skill owns one collaboration strategy, one evidence contract, and one stop
 condition. Use the smallest strategy that matches the work.
 
+See the [quick usage guide](USAGE.md) for copy-ready prompts and common combinations.
+
 ## Choose a strategy
 
 | Skill | Use when | Do not use when |
