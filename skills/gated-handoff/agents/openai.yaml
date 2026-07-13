@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gated Handoff"
+  short_description: "Validate dependent work at receiver-owned gates"
+  default_prompt: "Use $gated-handoff to move this work through receiver-owned acceptance gates."

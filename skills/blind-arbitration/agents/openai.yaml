@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blind Arbitration"
+  short_description: "Independent proposals with controlled adjudication"
+  default_prompt: "Use $blind-arbitration to collect independent proposals and adjudicate them against explicit criteria."

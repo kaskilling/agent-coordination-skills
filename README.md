@@ -1,64 +1,169 @@
-# second-round
+# Agent Coordination Skills
 
-Adversarial review, fix, and re-review for agent work.
+Eight focused skills for coordinating agent teams without turning every task into
+an unstructured swarm.
 
-`second-round` asks a fresh reviewer surface to challenge an existing artifact,
-plan, implementation, repository, document, or workflow. It is designed for the
-moment after a first pass exists and you want the next agent to find what would
-make a real user fail.
+Each skill owns one collaboration strategy, one evidence contract, and one stop
+condition. Use the smallest strategy that matches the work.
 
-The skill guides an agent to:
+## Choose a strategy
 
-- capture the baseline and current validation evidence
-- request independent criticism instead of approval
-- triage findings by severity
-- fix accepted blockers and high-value issues when fixes are in scope
-- re-review after material fixes
-- close with evidence and remaining risks
+| Skill | Use when | Do not use when |
+|---|---|---|
+| [`second-round`](skills/second-round/SKILL.md) | Existing work needs an independent review, accepted fixes, and re-review | No first pass exists yet |
+| [`peer-deliberation`](skills/peer-deliberation/SKILL.md) | Two peers should question and revise each other directly | First judgments must remain independent |
+| [`blind-arbitration`](skills/blind-arbitration/SKILL.md) | Independent proposals must stay blind before controlled adjudication | Peers need an open working conversation |
+| [`proof-split`](skills/proof-split/SKILL.md) | Independent proof surfaces or review lenses can run in parallel | Agents are defending rival causal explanations |
+| [`hypothesis-duel`](skills/hypothesis-duel/SKILL.md) | Competing causes need discriminating tests and falsification | The task only needs broad coverage |
+| [`artifact-room`](skills/artifact-room/SKILL.md) | Several contributors must converge through durable shared state | Agents would edit the same canonical file concurrently |
+| [`gated-handoff`](skills/gated-handoff/SKILL.md) | Dependent work must pass receiver-owned acceptance gates | Workstreams are independently runnable |
+| [`slice-and-integrate`](skills/slice-and-integrate/SKILL.md) | A feature can be divided into independent vertical slices with one integrator | The split creates layer-only work with no local proof |
 
 ## Install
 
-Use a standard skills installer:
+List the available skills:
 
 ```sh
-npx skills@latest add kaskilling/second-round
+npx skills@latest add kaskilling/agent-coordination-skills --list
 ```
 
-Manual install:
+Choose skills interactively for the detected agent:
 
 ```sh
-git clone https://github.com/kaskilling/second-round.git
-cp -R second-round/skills/second-round ~/.agents/skills/
+npx skills@latest add kaskilling/agent-coordination-skills
 ```
 
-Restart your agent after installing if it does not pick up new skills
-dynamically.
+Install one strategy into Codex for the current project:
 
-## Use
-
-Invoke the skill directly:
-
-```text
-$second-round review this plan critically
-$second-round re-review this implementation after fixes
+```sh
+npx skills@latest add kaskilling/agent-coordination-skills \
+  --skill hypothesis-duel --agent codex --yes
 ```
 
-Agents can also trigger it when you ask for a second round, critical review,
-independent review, adversarial review, another agent's view, or a
-review/improve/re-review loop.
+Install every strategy into Codex for the current project:
 
-## Repository Layout
+```sh
+npx skills@latest add kaskilling/agent-coordination-skills \
+  --skill '*' --agent codex --yes
+```
+
+Install every strategy globally for Codex:
+
+```sh
+npx skills@latest add kaskilling/agent-coordination-skills \
+  --skill '*' --agent codex --global --yes
+```
+
+For Claude Code, use the same commands with an explicit agent:
+
+```sh
+npx skills@latest add kaskilling/agent-coordination-skills \
+  --skill '*' --agent claude-code --yes
+```
+
+Restart your agent if it does not discover installed skills dynamically.
+
+Avoid the CLI's `--all` shorthand when you mean “all skills for one agent”:
+it also selects every detected agent. Use `--skill '*' --agent <agent>` instead.
+
+### Existing `second-round` users
+
+This is the same repository that was originally published as
+`kaskilling/second-round`. GitHub redirects the old repository URL, and the
+existing `skills/second-round/` path remains unchanged. The old install command
+continues to select from this collection:
+
+```sh
+npx skills@latest add kaskilling/second-round --skill second-round
+```
+
+Manual fallback for one Codex skill:
+
+```sh
+git clone https://github.com/kaskilling/agent-coordination-skills.git
+mkdir -p ~/.agents/skills
+cp -R agent-coordination-skills/skills/peer-deliberation ~/.agents/skills/
+```
+
+Manual fallback for one Claude Code skill:
+
+```sh
+git clone https://github.com/kaskilling/agent-coordination-skills.git
+mkdir -p ~/.claude/skills
+cp -R agent-coordination-skills/skills/peer-deliberation ~/.claude/skills/
+```
+
+## Shared rules
+
+All eight skills apply the same operating invariants:
+
+- one lead owns scope, integration, conflict resolution, and the final answer
+- every agent receives a distinct role, artifact scope, proof obligation, and stop condition
+- review, diagnosis, and planning remain read-only unless the user authorized edits
+- agents preserve exact evidence and label inference, uncertainty, and missing validation
+- one path stops after two dead ends and pivots to a higher-signal surface
+- agents never edit the same canonical file concurrently
+- each contribution gets narrow proof; broad validation is batched by default
+- degraded execution is stated explicitly when independent agents or enough slots are unavailable
+
+## Repository layout
 
 ```text
+.codex-plugin/plugin.json
+.github/workflows/validate.yml
+scripts/validate_skills.py
+skills.sh.json
 skills/
+  artifact-room/
+  blind-arbitration/
+  gated-handoff/
+  hypothesis-duel/
+  peer-deliberation/
+  proof-split/
   second-round/
-    SKILL.md
-    agents/
-      openai.yaml
+  slice-and-integrate/
 ```
 
-The installed skill folder is intentionally small. `SKILL.md` is the portable
-skill entrypoint, and `agents/openai.yaml` supplies Codex UI metadata.
+Every skill is self-contained and intentionally lean:
+
+```text
+skills/<name>/
+  SKILL.md
+  agents/openai.yaml
+```
+
+## Validate
+
+Run the deterministic repository check:
+
+```sh
+python3 scripts/validate_skills.py
+```
+
+It verifies folder/frontmatter names, unique inventory, required UI metadata,
+description and file-size limits, relative links, manifest inventories, and a
+small denylist of common private paths, private email domains, and credential
+signatures. Treat it as a preflight, not a replacement for repository secret
+scanning or review.
+
+Behavioral evaluation remains separate because model grading is nondeterministic.
+Forward-test a changed skill on a realistic task before releasing it.
+
+## Design sources
+
+The collection layout follows primary-source conventions from:
+
+- [Agent Skills specification](https://github.com/agentskills/agentskills/blob/main/docs/specification.mdx)
+- [Matt Pocock's composable skills collection](https://github.com/mattpocock/skills)
+- [Anthropic's self-contained skill collection](https://github.com/anthropics/skills)
+- [Vercel's grouped agent skills](https://github.com/vercel-labs/agent-skills)
+- [OpenAI's current plugin examples](https://github.com/openai/plugins)
+- [Obra Superpowers coordination skills](https://github.com/obra/superpowers)
+
+Web Dev Cody's
+[Agentic Jumpstart starter](https://github.com/webdevcody/agentic-jumpstart-starter-kit)
+was treated as a project-local skill example, not as the distribution model for
+this collection.
 
 ## License
 

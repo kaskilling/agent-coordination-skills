@@ -1,0 +1,38 @@
+name: Validate skills
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout collection
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install pinned validators
+        run: python3 -m pip install --disable-pip-version-check PyYAML==6.0.2 skills-ref==0.1.1
+
+      - name: Validate repository and Codex plugin contracts
+        run: python3 scripts/validate_skills.py
+
+      - name: Validate Agent Skills specification
+        run: |
+          for skill in skills/*; do
+            agentskills validate "$skill"
+          done
+
+      - name: Verify installer discovery
+        run: npx --yes skills@1.5.16 add . --list
