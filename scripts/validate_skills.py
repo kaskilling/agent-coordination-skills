@@ -7,6 +7,7 @@ import json
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -133,12 +134,90 @@ def validate_inventory(skill_names: list[str], errors: list[str]) -> None:
     manifest = json.loads(
         (ROOT / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
     )
+    allowed_manifest = {
+        "name",
+        "version",
+        "description",
+        "author",
+        "homepage",
+        "repository",
+        "license",
+        "keywords",
+        "skills",
+        "interface",
+    }
+    unexpected = sorted(set(manifest) - allowed_manifest)
+    if unexpected:
+        fail(errors, f"plugin manifest contains unsupported fields {unexpected}")
     if manifest.get("name") != "agent-coordination-skills":
         fail(errors, "plugin name must be agent-coordination-skills")
+    for field in ("description", "homepage", "repository", "license"):
+        if not isinstance(manifest.get(field), str) or not manifest[field].strip():
+            fail(errors, f"plugin {field} must be a non-empty string")
     if manifest.get("skills") != "./skills/":
         fail(errors, "plugin skills path must be ./skills/")
     if not SEMVER_RE.fullmatch(str(manifest.get("version", ""))):
         fail(errors, "plugin version must use strict semantic versioning")
+    for field in ("homepage", "repository"):
+        parsed = urlparse(str(manifest.get(field, "")))
+        if parsed.scheme != "https" or not parsed.netloc:
+            fail(errors, f"plugin {field} must be an absolute HTTPS URL")
+
+    author = manifest.get("author")
+    if not isinstance(author, dict) or not isinstance(author.get("name"), str):
+        fail(errors, "plugin author.name must be a non-empty string")
+    elif not author["name"].strip():
+        fail(errors, "plugin author.name must be a non-empty string")
+    if isinstance(author, dict) and "url" in author:
+        parsed = urlparse(str(author["url"]))
+        if parsed.scheme != "https" or not parsed.netloc:
+            fail(errors, "plugin author.url must be an absolute HTTPS URL")
+
+    interface = manifest.get("interface")
+    if not isinstance(interface, dict):
+        fail(errors, "plugin interface must be an object")
+    else:
+        allowed_interface = {
+            "displayName",
+            "shortDescription",
+            "longDescription",
+            "developerName",
+            "category",
+            "capabilities",
+            "websiteURL",
+            "defaultPrompt",
+        }
+        unexpected = sorted(set(interface) - allowed_interface)
+        if unexpected:
+            fail(errors, f"plugin interface contains unsupported fields {unexpected}")
+        for field in (
+            "displayName",
+            "shortDescription",
+            "longDescription",
+            "developerName",
+            "category",
+        ):
+            value = interface.get(field)
+            if not isinstance(value, str) or not value.strip():
+                fail(errors, f"plugin interface.{field} must be a non-empty string")
+        capabilities = interface.get("capabilities")
+        if not isinstance(capabilities, list) or not all(
+            isinstance(value, str) and value.strip() for value in capabilities
+        ):
+            fail(errors, "plugin interface.capabilities must be an array of strings")
+        parsed = urlparse(str(interface.get("websiteURL", "")))
+        if parsed.scheme != "https" or not parsed.netloc:
+            fail(errors, "plugin interface.websiteURL must be an absolute HTTPS URL")
+        prompts = interface.get("defaultPrompt")
+        if not isinstance(prompts, list) or not 1 <= len(prompts) <= 3:
+            fail(errors, "plugin interface.defaultPrompt must contain 1-3 prompts")
+        elif not all(
+            isinstance(prompt, str) and 1 <= len(prompt) <= 128 for prompt in prompts
+        ):
+            fail(errors, "plugin default prompts must contain 1-128 characters")
+
+    if "[TODO:" in json.dumps(manifest):
+        fail(errors, "plugin manifest contains an unresolved TODO placeholder")
 
 
 def validate_privacy(errors: list[str]) -> None:

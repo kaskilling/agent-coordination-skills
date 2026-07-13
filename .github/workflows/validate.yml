@@ -25,7 +25,7 @@ jobs:
       - name: Install pinned validators
         run: python3 -m pip install --disable-pip-version-check PyYAML==6.0.2 skills-ref==0.1.1
 
-      - name: Validate repository contracts
+      - name: Validate repository and Codex plugin contracts
         run: python3 scripts/validate_skills.py
 
       - name: Validate Agent Skills specification
@@ -36,15 +36,3 @@ jobs:
 
       - name: Verify installer discovery
         run: npx --yes skills@1.5.16 add . --list
-
-      - name: Checkout pinned Codex plugin validator
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-        with:
-          repository: openai/plugins
-          ref: bd2122cb92f2ade874d8c2b1d00383976ab9415b
-          path: .validation/openai-plugins
-          sparse-checkout: .agents/skills/plugin-creator/scripts/validate_plugin.py
-          sparse-checkout-cone-mode: false
-
-      - name: Validate Codex plugin manifest
-        run: python3 .validation/openai-plugins/.agents/skills/plugin-creator/scripts/validate_plugin.py .
