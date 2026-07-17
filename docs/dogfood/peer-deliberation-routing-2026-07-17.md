@@ -1,8 +1,8 @@
 # Peer-deliberation routing dogfood
 
-Date: 2026-07-17  
-Verdict: **PASS**  
-Evidence strength: **descriptive only**
+- Date: 2026-07-17
+- Verdict: **PASS**
+- Evidence strength: **descriptive only**
 
 ## Question
 
