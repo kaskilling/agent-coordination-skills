@@ -4,6 +4,8 @@
 
 - Add a preregistered causal routing check for `peer-deliberation` and a manual,
   commit-pinned GitHub Action that publishes only the safe report artifact.
+- Publish the first 36-trial dogfood result, including the invalid pilot,
+  operational timeout amendment, arm-level outcomes, and claim boundary.
 
 ## 0.2.1 - 2026-07-13
 

@@ -112,7 +112,10 @@ All eight skills apply the same operating invariants:
 
 ```text
 .codex-plugin/plugin.json
+.github/workflows/cib.yml
 .github/workflows/validate.yml
+cib.yaml
+docs/dogfood/
 scripts/validate_skills.py
 skills.sh.json
 skills/
@@ -178,6 +181,10 @@ uv run cib check /path/to/agent-coordination-skills/cib.yaml \
 This check proves routing of CIB's designated canary resource under the encoded
 boundary. It does not prove that two real subagents were spawned or that every
 step in `skills/peer-deliberation/SKILL.md` was followed.
+
+See the [first dogfood result](docs/dogfood/peer-deliberation-routing-2026-07-17.md):
+the strict `if and only if` arm passed both selected routing thresholds, while
+the plain `if` arm used the resource in all six unnecessary-use trials.
 
 ## Design sources
 
