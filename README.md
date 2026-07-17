@@ -164,16 +164,28 @@ blind proposals, proof splitting, and single-reviewer work?
 The preregistered check contains three matched required/unnecessary case pairs,
 two repetitions, and three causal arms: 36 model calls in total. It passes when
 required use and avoided unnecessary use are each at least 80%, with no more than
-5% harness failures. These thresholds were fixed before the first run.
+5% harness failures. These thresholds were fixed before the first run. The
+first completed run took about 12 minutes and 4 million total tokens; monetary
+cost depends on model access, pricing, and cache behavior.
+
+Run it before releasing a change to the activation boundary, cases, model, or
+agent runtime. It is not intended for ordinary documentation-only changes.
 
 Run the manual **Check peer-deliberation routing** GitHub workflow after adding a
 dedicated `OPENAI_API_KEY` repository secret. The workflow pins Conditional
 Instruction Benchmark v0.4.0 by commit and uploads its safe report; it does not
 publish raw prompts or private evidence.
 
-For a local run, use a v0.4.0 CIB checkout with its dependencies installed:
+For a local run, prepare a
+[CIB v0.4.0](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.4.0)
+checkout, then run the public config with a private output directory:
 
 ```sh
+git clone --branch v0.4.0 \
+  https://github.com/kalibraring/conditional-instruction-benchmark.git
+cd conditional-instruction-benchmark
+uv sync --frozen
+npm ci
 uv run cib check /path/to/agent-coordination-skills/cib.yaml \
   --output-dir /path/to/private-results/peer-deliberation-routing
 ```
