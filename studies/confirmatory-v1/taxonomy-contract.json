@@ -1,0 +1,24 @@
+{
+  "schema_version": "cib-taxonomy-contract/1",
+  "classes": [
+    "artifact-room",
+    "blind-arbitration",
+    "gated-handoff",
+    "hypothesis-duel",
+    "peer-deliberation",
+    "proof-split",
+    "second-round",
+    "slice-and-integrate",
+    "null"
+  ],
+  "negative_order": {
+    "artifact-room": ["blind-arbitration", "gated-handoff", "hypothesis-duel", "peer-deliberation", "proof-split", "second-round", "slice-and-integrate", "null"],
+    "blind-arbitration": ["artifact-room", "gated-handoff", "hypothesis-duel", "peer-deliberation", "proof-split", "second-round", "slice-and-integrate", "null"],
+    "gated-handoff": ["artifact-room", "blind-arbitration", "hypothesis-duel", "peer-deliberation", "proof-split", "second-round", "slice-and-integrate", "null"],
+    "hypothesis-duel": ["artifact-room", "blind-arbitration", "gated-handoff", "peer-deliberation", "proof-split", "second-round", "slice-and-integrate", "null"],
+    "peer-deliberation": ["artifact-room", "blind-arbitration", "gated-handoff", "hypothesis-duel", "proof-split", "second-round", "slice-and-integrate", "null"],
+    "proof-split": ["artifact-room", "blind-arbitration", "gated-handoff", "hypothesis-duel", "peer-deliberation", "second-round", "slice-and-integrate", "null"],
+    "second-round": ["artifact-room", "blind-arbitration", "gated-handoff", "hypothesis-duel", "peer-deliberation", "proof-split", "slice-and-integrate", "null"],
+    "slice-and-integrate": ["artifact-room", "blind-arbitration", "gated-handoff", "hypothesis-duel", "peer-deliberation", "proof-split", "second-round", "null"]
+  }
+}

@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-proof-split
+instruction:
+  condition: an investigation, audit, or research task can be split across independent orthogonal proof surfaces and synthesized without a fix and re-review loop
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Audit this release in parallel across source code, tests, documentation, package contents, and hosted CI, then return one coverage matrix and conclusion."
+    - "Research the behavior using official documentation, implementation source, runtime reproduction, and version history as separate evidence surfaces."
+    - "Inspect a performance regression simultaneously on device traces, server metrics, network captures, and recent code changes, then reconcile the findings."
+    - "Verify a release across the built wheel, source archive, clean install, dependency graph, and hosted workflow as separate proof owners."
+    - "Investigate a data incident in parallel through warehouse queries, pipeline code, scheduler history, and lineage metadata, then produce one coverage matrix."
+    - "Review this security boundary through authentication code, authorization tests, deployment policy, and runtime traces without entering a fix loop."
+    - "Compare a specification with implementation, contract tests, public docs, and real API behavior using independent evidence tracks."
+    - "Assess mobile startup time across cold-device traces, bundle composition, network waterfalls, and backend latency, then synthesize one conclusion."
+  unnecessary:
+    - "Accumulate several agents' accepted findings in one durable canonical artifact with provenance and a single writer."
+    - "Keep independent design proposals blind until submission, then adjudicate them with a fixed rubric."
+    - "Transfer an implementation from builder to verifier, requiring the verifier to inspect raw artifacts and explicitly accept or reject it."
+    - "The crash has competing causes; require rival predictions, falsifiers, and discriminating experiments."
+    - "Have two specialists directly challenge each other's architecture positions for three exchanges and converge on a joint recommendation."
+    - "Bring in a fresh reviewer after the first pass, fix accepted gaps, and review the revised artifact again."
+    - "Implement this larger feature through independently owned vertical slices and integrate them under one shared contract."
+    - "Format this JSON object with sorted keys; the result can be checked directly without parallel investigation."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 1833834039
+  trial_timeout_seconds: 300
+  study_timeout_seconds: 5400
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

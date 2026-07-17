@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-peer-deliberation
+instruction:
+  condition: the task requires two agents with distinct expertise to directly question, challenge, and revise each other before reaching a joint position
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Have a privacy counsel and ML engineer directly challenge this retention design for three exchanges, revise their views, and reconcile one recommendation."
+    - "Let a database architect and SRE question each other's failover assumptions, answer concrete challenges, and return one joint position with unresolved dissent."
+    - "Ask a product strategist and accessibility specialist to exchange critiques of this onboarding flow and negotiate an evidence-backed compromise."
+    - "Have a compiler engineer and language designer debate the type-system change directly, update their arguments, and converge where evidence permits."
+    - "Let a finance controller and platform lead challenge each other's cloud-cost plan for three bounded rounds and reconcile the remaining tradeoff."
+    - "Ask a security researcher and browser engineer to directly cross-examine this sandbox proposal and produce one revised threat position."
+    - "Have an operations lead and data scientist negotiate alert thresholds through direct questions, revisions, and a joint final recommendation."
+    - "Let a legal reviewer and developer-experience lead directly debate this API policy and preserve any evidence-backed unresolved disagreement."
+  unnecessary:
+    - "Have several agents accumulate findings in one canonical research record with a single writer and visible provenance."
+    - "Keep three first-pass proposals mutually blind, then let a lead rank them against criteria frozen in advance."
+    - "Move the schema from designer to implementer to consumer, requiring each receiver to inspect proof and accept the handoff."
+    - "A timeout has three plausible causes; assign competing hypothesis owners and run tests that distinguish their predictions."
+    - "Split this audit across browser traces, server logs, code, and documentation as independent proof surfaces, then synthesize."
+    - "Have a fresh reviewer inspect the completed rollout plan, apply accepted fixes, and review the changed result again."
+    - "Build account setup, billing, and cancellation as independently owned vertical slices, then integrate and test the seams."
+    - "Explain what this regular expression matches in one paragraph without delegating the task."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 201273059
+  trial_timeout_seconds: 300
+  study_timeout_seconds: 5400
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

@@ -1,0 +1,528 @@
+{
+  "schema_version": "cib-blind-taxonomy-packet/1",
+  "classes": [
+    "artifact-room",
+    "blind-arbitration",
+    "gated-handoff",
+    "hypothesis-duel",
+    "peer-deliberation",
+    "proof-split",
+    "second-round",
+    "slice-and-integrate",
+    "null"
+  ],
+  "prompts": [
+    {
+      "id": "529359dc841ff927",
+      "text": "Have an API designer and client engineer directly challenge each other's contract assumptions and converge on one recommendation."
+    },
+    {
+      "id": "4e9f088fa74ec3a6",
+      "text": "After the initial security remediation is complete, use a fresh adversarial surface to find residual gaps, fix accepted issues, and re-review."
+    },
+    {
+      "id": "4e362eed28ecb44b",
+      "text": "Have several agents build a single durable decision record over time, showing proposals, challenges, and resolutions without concurrent edits to the canonical file."
+    },
+    {
+      "id": "3d83e28e1b21c0aa",
+      "text": "Run a multi-agent investigation where all accepted findings must accumulate in one governed plan that later agents can inspect and extend."
+    },
+    {
+      "id": "fba01e7b94073f41",
+      "text": "The mobile crash appears after two unrelated releases; prevent anchoring by giving owners competing causes and tests that cannot support every theory at once."
+    },
+    {
+      "id": "98535484f8823e02",
+      "text": "Explain what this regular expression matches in one paragraph without delegating the task."
+    },
+    {
+      "id": "fa4a815144c7b9a1",
+      "text": "Have a fresh reviewer inspect the completed rollout plan, apply accepted fixes, and review the changed result again."
+    },
+    {
+      "id": "8d239ff7503e1a09",
+      "text": "Coordinate several agents through one canonical planning artifact with a single writer and visible provenance."
+    },
+    {
+      "id": "9f673fce5f326411",
+      "text": "Accumulate several agents' findings in one canonical evidence board with visible provenance and a single controlled writer."
+    },
+    {
+      "id": "362019255b5246c0",
+      "text": "The regression has multiple credible causes; assign rival hypotheses and run tests that falsify or distinguish them."
+    },
+    {
+      "id": "155ef4489b2034cf",
+      "text": "Implement three non-overlapping workflow slices in parallel, merge them in a declared order, test the seams, and obtain an independent integrated-state review."
+    },
+    {
+      "id": "4ba639dc8d396ef4",
+      "text": "Advance a policy draft through author, legal reviewer, and publisher only when each downstream owner accepts the incoming artifact against declared evidence."
+    },
+    {
+      "id": "4637ec965992dd50",
+      "text": "Commission four independent incident assessments, conceal identities and conclusions until submission, then let one lead adjudicate against a frozen evidence rubric."
+    },
+    {
+      "id": "ea0478319b7fde85",
+      "text": "Two recovery attempts did not move the database corruption issue; have hypothesis owners state what would falsify them and challenge competing explanations with fresh evidence."
+    },
+    {
+      "id": "fd2da9e4a8b38112",
+      "text": "Have a database expert and API designer directly challenge each other's consistency model and reconcile one joint recommendation."
+    },
+    {
+      "id": "344298df6b310179",
+      "text": "Advance a contract from author to implementer to verifier through receiver-owned acceptance gates."
+    },
+    {
+      "id": "9dd9aca7feb8c593",
+      "text": "Move a schema change from designer to implementer to verifier, but let each receiver inspect raw artifacts and own an explicit acceptance gate before work advances."
+    },
+    {
+      "id": "a3f21c3cac9d1431",
+      "text": "An intermittent failure has rival causes; assign hypothesis owners, state falsifiers, and run discriminating tests."
+    },
+    {
+      "id": "bc6f917297c00917",
+      "text": "Ask a product strategist and accessibility specialist to exchange critiques of this onboarding flow and negotiate an evidence-backed compromise."
+    },
+    {
+      "id": "2fe33394d910c222",
+      "text": "Pass a completed data contract from its author to a downstream consumer who must inspect raw proof and explicitly accept or reject it."
+    },
+    {
+      "id": "afb5e53e40537e15",
+      "text": "Keep independent design proposals blind until submission, then adjudicate them with a fixed rubric."
+    },
+    {
+      "id": "7bf4c3bff2aa1a8c",
+      "text": "A first-pass implementation is complete; bring in a fresh reviewer to research comparable patterns, find gaps, apply accepted fixes, and review the revised state again."
+    },
+    {
+      "id": "1d873d10ae3642a6",
+      "text": "Build this feature through three independent end-to-end slices with exclusive file ownership, then integrate and validate the complete behavior."
+    },
+    {
+      "id": "9560cda586e78881",
+      "text": "Build a single program plan from parallel workstream updates while preventing concurrent-edit damage and retaining every accepted change's owner."
+    },
+    {
+      "id": "c6e0e788b49303fe",
+      "text": "Summarize the public methods of this one Python class in five bullets; do not delegate or create shared project state."
+    },
+    {
+      "id": "902fcd1c7119cc50",
+      "text": "Split this audit across browser traces, server logs, code, and documentation as independent proof surfaces, then synthesize."
+    },
+    {
+      "id": "5594779d2e7a4fbe",
+      "text": "Compare a specification with implementation, contract tests, public docs, and real API behavior using independent evidence tracks."
+    },
+    {
+      "id": "00fb0f6e2bf622c7",
+      "text": "Move the schema from designer to implementer to consumer, requiring each receiver to inspect proof and accept the handoff."
+    },
+    {
+      "id": "eb8a682093c0da64",
+      "text": "Implement onboarding, account recovery, and session management as separate vertical slices, then integrate them under one contract."
+    },
+    {
+      "id": "e26c3a9e0489b6a5",
+      "text": "Convert this single timestamp to UTC and explain the result without using additional agents."
+    },
+    {
+      "id": "b5bfb470fd53e08f",
+      "text": "Obtain two blind security judgments, reveal only controlled evidence for one challenge round, and record a traceable final adjudication."
+    },
+    {
+      "id": "22c6b082b84ccea3",
+      "text": "Run a research-to-spec-to-build pipeline where every stage can reject the incoming package with evidence and the sender cannot self-certify acceptance."
+    },
+    {
+      "id": "91063748e7b5f6e2",
+      "text": "Collect three independent architecture proposals without letting authors see one another, then rank them against criteria fixed in advance."
+    },
+    {
+      "id": "ee026c20dd46df71",
+      "text": "Build checkout, refund, and receipt flows as independent vertical slices, then integrate them under one product contract."
+    },
+    {
+      "id": "0ed26e6dc61608b1",
+      "text": "The failure has three plausible causes; assign competing hypotheses, state falsifiers, and run tests that make the explanations predict different results."
+    },
+    {
+      "id": "c64ae739e38269c2",
+      "text": "Correct the spelling in this one heading and show the diff; no completed work needs a fresh review loop."
+    },
+    {
+      "id": "a0d8d812864fd6dc",
+      "text": "A data mismatch survives two attempted fixes; compare upstream, transformation, and caching hypotheses through explicit predictions and fresh first-failure artifacts."
+    },
+    {
+      "id": "17d36a1196041ea7",
+      "text": "Let a database architect and SRE question each other's failover assumptions, answer concrete challenges, and return one joint position with unresolved dissent."
+    },
+    {
+      "id": "2117f22e64e89c50",
+      "text": "Let a legal reviewer and developer-experience lead directly debate this API policy and preserve any evidence-backed unresolved disagreement."
+    },
+    {
+      "id": "64e13ee74934802b",
+      "text": "Update this one constant and run the focused test; the work is too small to divide into vertical slices."
+    },
+    {
+      "id": "5530690a27b4f12d",
+      "text": "Let a database specialist and reliability engineer directly challenge their capacity plans and reconcile one position."
+    },
+    {
+      "id": "408126e6b64ac3de",
+      "text": "Have two specialists directly challenge each other's architecture positions for three exchanges and converge on a joint recommendation."
+    },
+    {
+      "id": "53682b43735a8743",
+      "text": "An outage has three plausible causes; assign rival hypotheses, require falsifiers, and run tests that distinguish their predictions."
+    },
+    {
+      "id": "8f7bc870a96f2f69",
+      "text": "The crash has competing causes; require rival predictions, falsifiers, and discriminating experiments."
+    },
+    {
+      "id": "f23ea9db47f9e756",
+      "text": "Move a dataset from collector to cleaner to analyst, with each receiver inspecting the raw package and explicitly accepting or rejecting it before continuing."
+    },
+    {
+      "id": "605c6425bd58641b",
+      "text": "Evolve one canonical domain glossary through specialist proposals and challenges so later agents inherit the resolved terms and unresolved conflicts."
+    },
+    {
+      "id": "a22330023b2469af",
+      "text": "Audit this release in parallel across source code, tests, documentation, package contents, and hosted CI, then return one coverage matrix and conclusion."
+    },
+    {
+      "id": "aaa66ff68e11a4a8",
+      "text": "Assign distinct owners to search, sharing, and offline access end to end, keep hot files exclusive, and integrate only after slice-level evidence."
+    },
+    {
+      "id": "ec3592c2c4bf1ac3",
+      "text": "The migration plan is complete; perform a fresh critical pass, make evidence-backed corrections, and explicitly assess the revised plan's remaining risk."
+    },
+    {
+      "id": "f3d945e1cd0b68a1",
+      "text": "The architecture proposal already has a first pass; commission an independent challenge, revise supported weaknesses, and have the reviewer inspect the new version."
+    },
+    {
+      "id": "d47dfcdf55fa4f05",
+      "text": "Split the release by three complete operator journeys, prove each narrowly, merge in a fixed order, and review the integrated state independently."
+    },
+    {
+      "id": "53c7ca34b18780ad",
+      "text": "Stress-test this finished product plan with an independent adversarial second round, revise it from supported findings, and state the remaining risk after re-review."
+    },
+    {
+      "id": "5ae80d5ad7362add",
+      "text": "A prototype has already been implemented; ask a new reviewer to test assumptions, accept or reject findings, improve it, and run another review round."
+    },
+    {
+      "id": "bc04b5a250ca12bc",
+      "text": "Have several agents accumulate findings in one canonical research record with a single writer and visible provenance."
+    },
+    {
+      "id": "68b096eb549f6277",
+      "text": "Verify a release across the built wheel, source archive, clean install, dependency graph, and hosted workflow as separate proof owners."
+    },
+    {
+      "id": "c9a86297535d7d5f",
+      "text": "Review the completed repository from a new surface, prioritize actionable defects, fix them, and repeat review until remaining concerns are explicit."
+    },
+    {
+      "id": "9b4cac61edce924a",
+      "text": "Keep three first-pass proposals mutually blind, then let a lead rank them against criteria frozen in advance."
+    },
+    {
+      "id": "d21c759524c9cdff",
+      "text": "Collect independent remediation proposals blindly, then adjudicate them against criteria frozen before disclosure."
+    },
+    {
+      "id": "e0614e83ea223f23",
+      "text": "Build authentication, profile editing, and notification preferences as independent end-to-end user slices with exclusive ownership, then integrate and run broad validation."
+    },
+    {
+      "id": "0109d1c692089ce5",
+      "text": "Keep model-vendor evaluations compartmentalized until each first pass is frozen, then rank the submissions with a neutral rubric."
+    },
+    {
+      "id": "b91b3c9f32a30438",
+      "text": "Coordinate several agents through one shared evidence ledger with a single canonical writer and durable provenance."
+    },
+    {
+      "id": "03982d6a776c9973",
+      "text": "Transfer a release candidate through security, operations, and release owners sequentially, recording each receiver's acceptance criteria and decision."
+    },
+    {
+      "id": "72656edc8b301026",
+      "text": "Review this security boundary through authentication code, authorization tests, deployment policy, and runtime traces without entering a fix loop."
+    },
+    {
+      "id": "0b940e94a72d6097",
+      "text": "Inspect a performance regression simultaneously on device traces, server metrics, network captures, and recent code changes, then reconcile the findings."
+    },
+    {
+      "id": "b76503aca4205951",
+      "text": "Have an operations lead and data scientist negotiate alert thresholds through direct questions, revisions, and a joint final recommendation."
+    },
+    {
+      "id": "7645ba6a8653a122",
+      "text": "Ask a security researcher and browser engineer to directly cross-examine this sandbox proposal and produce one revised threat position."
+    },
+    {
+      "id": "e62dd8db5edd9717",
+      "text": "Gather competing product forecasts without cross-talk, disclose only normalized evidence for one controlled challenge, and record the final ranking."
+    },
+    {
+      "id": "090b726c09889cb0",
+      "text": "Have several researchers contribute to one durable literature map that records evidence lineage, contradictions, and the lead's canonical synthesis."
+    },
+    {
+      "id": "2706a93bc1155285",
+      "text": "Collect independent design proposals without cross-contamination and let a lead rank them against a preregistered rubric."
+    },
+    {
+      "id": "37823ac119a4a95a",
+      "text": "Coordinate four reviewers through one shared evidence board; preserve each contribution's provenance and conflicts, with one canonical writer producing the final board."
+    },
+    {
+      "id": "8a754ae35c13b97a",
+      "text": "Research the behavior using official documentation, implementation source, runtime reproduction, and version history as separate evidence surfaces."
+    },
+    {
+      "id": "a1c8bf0fe7f08410",
+      "text": "Add a docstring to this deterministic helper and run its existing unit test; there is no unresolved failure to diagnose."
+    },
+    {
+      "id": "8c1edabc3ab48525",
+      "text": "Perform a read-only audit across code, tests, docs, packaging, and hosted automation as separate proof surfaces, then synthesize the findings."
+    },
+    {
+      "id": "57dd75fef0418824",
+      "text": "Research the library behavior from official docs, source code, and a minimal reproduction in parallel, then synthesize the evidence."
+    },
+    {
+      "id": "80ae0f879ea25242",
+      "text": "Maintain a shared incident evidence ledger across multiple agent shifts, with one writer applying accepted updates and preserving the decision trail."
+    },
+    {
+      "id": "50ff2e7d6bdd8d75",
+      "text": "Split this product increment by independently useful vertical behaviors rather than layers, give each slice narrow proof, and converge through one integration owner."
+    },
+    {
+      "id": "e8982897872d8276",
+      "text": "The deployment fails intermittently and logs support three causes; assign rival hypotheses, require different predictions, and run the cheapest discriminating tests."
+    },
+    {
+      "id": "50adf63038b4540f",
+      "text": "Ask two legal reviewers for uninfluenced first opinions, keep their work compartmentalized, then resolve the choice against criteria declared in advance."
+    },
+    {
+      "id": "6d356fd305c76b68",
+      "text": "Move one dependent artifact sequentially from researcher to designer to implementer, with each receiver owning an acceptance gate."
+    },
+    {
+      "id": "11fb4a4bcf79596c",
+      "text": "Format this JSON object with sorted keys; the result can be checked directly without parallel investigation."
+    },
+    {
+      "id": "c97bf05ee5bd206f",
+      "text": "Ask a fresh reviewer to challenge the completed release, apply accepted fixes, and review the revised state."
+    },
+    {
+      "id": "80aa1c6ceb915689",
+      "text": "Latency regressed after several simultaneous changes and the team is anchored on caching; force competing causal accounts and finish with one surviving cause or bounded unknown."
+    },
+    {
+      "id": "c65975d91b5472db",
+      "text": "Transfer a migration plan through database, service, and operations owners, preserving every rejection reason and revised resubmission."
+    },
+    {
+      "id": "d58e7f08aba7636d",
+      "text": "Inspect code, tests, documentation, and packaging through independent parallel proof surfaces, then reconcile all findings."
+    },
+    {
+      "id": "8a1f0464c91d662e",
+      "text": "Build ingestion, correction, and export workflows as independently useful vertical behaviors, then combine them and validate the shared contract."
+    },
+    {
+      "id": "73b88e651e84dc9c",
+      "text": "Have several agents maintain one canonical incident ledger with visible provenance, conflicts, and a single writer."
+    },
+    {
+      "id": "5022cb067669748e",
+      "text": "Rename this local variable for clarity and run its focused unit test; no staged delegation is required."
+    },
+    {
+      "id": "4998478aee5694ba",
+      "text": "Build import, validation, and export as independent end-to-end slices, then integrate and verify the seams."
+    },
+    {
+      "id": "c330e7edd5e4c1a1",
+      "text": "Run model training, evaluation, safety review, and deployment as dependent stages where no sender may self-certify the next gate."
+    },
+    {
+      "id": "8932d38d182cd7a4",
+      "text": "Run a blind benchmark of three agent designs, freeze every first pass before disclosure, and let an adjudicator select with a traceable scorecard."
+    },
+    {
+      "id": "3101e9d581a8d7e4",
+      "text": "Split a release audit across code, tests, docs, packaging, and CI as independent proof surfaces, then synthesize one conclusion."
+    },
+    {
+      "id": "ae41b0215ccdbf52",
+      "text": "Maintain one canonical multi-agent decision record with provenance, controlled writing, and visible unresolved conflicts."
+    },
+    {
+      "id": "61c4cff3a526caed",
+      "text": "Divide this incident investigation across logs, code, infrastructure, and runbooks in parallel, then synthesize the independent proof surfaces."
+    },
+    {
+      "id": "3d35c82d7c291852",
+      "text": "A cache regression has several plausible causes; assign competing hypotheses and run discriminating tests that could falsify each one."
+    },
+    {
+      "id": "07c8b8f6f8a8df0e",
+      "text": "Let a finance controller and platform lead challenge each other's cloud-cost plan for three bounded rounds and reconcile the remaining tradeoff."
+    },
+    {
+      "id": "75e3385f1cdc9810",
+      "text": "Have a product manager and backend engineer exchange critiques directly, revise their positions, and return a joint rollout recommendation."
+    },
+    {
+      "id": "cd7389abb3cbf755",
+      "text": "A finished pull request needs a fresh adversarial reviewer to find gaps, recommend fixes, and re-review the accepted changes."
+    },
+    {
+      "id": "37e647992f9cbcb9",
+      "text": "Move a contract from designer to implementer to verifier, and require each receiver to inspect raw proof before accepting the handoff."
+    },
+    {
+      "id": "14373048ab65f455",
+      "text": "Implement this larger feature through independently owned vertical slices and integrate them under one shared contract."
+    },
+    {
+      "id": "b2e914ee2d6e970e",
+      "text": "Have two domain experts directly challenge and revise each other's design positions before returning one joint view."
+    },
+    {
+      "id": "6306bf2924f5d6e7",
+      "text": "Keep three architecture proposals blind until first passes are frozen, then adjudicate them against criteria fixed in advance."
+    },
+    {
+      "id": "f41096b70fd08eb6",
+      "text": "Move a release artifact sequentially from builder to security reviewer to operator through receiver-owned acceptance gates."
+    },
+    {
+      "id": "66eec85632b6fede",
+      "text": "Take the finished documentation rewrite through an independent comparable-pattern review, apply justified changes, and inspect the final document again."
+    },
+    {
+      "id": "ba4101ef4b4697ba",
+      "text": "Ask three engineers for independent migration proposals, prevent cross-contamination, then have a lead score them against criteria declared before disclosure."
+    },
+    {
+      "id": "84357bd69ebd8105",
+      "text": "Have a compiler engineer and language designer debate the type-system change directly, update their arguments, and converge where evidence permits."
+    },
+    {
+      "id": "1f023d22cabea191",
+      "text": "Deliver catalog browsing, cart editing, and checkout as separate user-visible slices with narrow proofs and one integration owner."
+    },
+    {
+      "id": "83410eba08d48604",
+      "text": "Bring a fresh reviewer to the completed implementation, apply accepted fixes, and review the revised state again."
+    },
+    {
+      "id": "829e9048500dc354",
+      "text": "Keep three vendor assessments blind until first passes are frozen, then adjudicate them with a predeclared scorecard."
+    },
+    {
+      "id": "d809e35d304dea98",
+      "text": "Assess mobile startup time across cold-device traces, bundle composition, network waterfalls, and backend latency, then synthesize one conclusion."
+    },
+    {
+      "id": "ee9de13996638086",
+      "text": "Investigate a data incident in parallel through warehouse queries, pipeline code, scheduler history, and lineage metadata, then produce one coverage matrix."
+    },
+    {
+      "id": "04b7e078e85a48c4",
+      "text": "A flaky payment test has four credible causes; make each owner predict different evidence, challenge the alternatives, and eliminate theories with targeted experiments."
+    },
+    {
+      "id": "48146a5be0d486db",
+      "text": "Create one canonical compliance dossier from several specialist contributions, keeping source provenance, rejected claims, and conflict resolutions visible."
+    },
+    {
+      "id": "2bc4b5cb78169b24",
+      "text": "Bring a fresh adversarial reviewer to a finished implementation, apply supported fixes, and review the revised state again."
+    },
+    {
+      "id": "8b393d198dc91605",
+      "text": "Build account setup, billing, and cancellation as independently owned vertical slices, then integrate and test the seams."
+    },
+    {
+      "id": "3054382de0cd48e4",
+      "text": "Split an initial audit across code, tests, docs, packaging, and CI in parallel, then synthesize one evidence-backed conclusion."
+    },
+    {
+      "id": "afbcde778b804f78",
+      "text": "Throughput collapsed but metrics disagree about CPU, locks, and network saturation; run a bounded evidence duel rather than diagnosing by vote."
+    },
+    {
+      "id": "656c8bc8787f43a6",
+      "text": "Memory usage doubled with conflicting profiler evidence; assign rival causal models, require self-falsification, and choose the next test by information gain."
+    },
+    {
+      "id": "387a1696ea89fdd6",
+      "text": "Bring in a fresh reviewer after the first pass, fix accepted gaps, and review the revised artifact again."
+    },
+    {
+      "id": "9d335b85dfe8f1b1",
+      "text": "Accumulate several agents' accepted findings in one durable canonical artifact with provenance and a single writer."
+    },
+    {
+      "id": "be0a49282a591905",
+      "text": "A timeout has three plausible causes; assign competing hypothesis owners and run tests that distinguish their predictions."
+    },
+    {
+      "id": "fb50d9bdeb5188ae",
+      "text": "Build search, saved filters, and export as independently owned end-to-end slices, then integrate and test their seams."
+    },
+    {
+      "id": "0976ce882d057807",
+      "text": "Give the finished rollout plan to a fresh critical reviewer, apply accepted fixes, and re-review the changed plan."
+    },
+    {
+      "id": "12b52c764150c4bc",
+      "text": "Let a security engineer and platform architect directly question each other's deployment plan and converge on one evidence-backed position."
+    },
+    {
+      "id": "c4d5750a5bf0ab15",
+      "text": "Implement signup, consent management, and account deletion in parallel vertical slices, then batch broad validation after convergence."
+    },
+    {
+      "id": "ae0640436dcfaa8c",
+      "text": "Have a privacy counsel and ML engineer directly challenge this retention design for three exchanges, revise their views, and reconcile one recommendation."
+    },
+    {
+      "id": "f806d73f231c89d3",
+      "text": "Collect independent risk estimates from specialists who cannot communicate, then have a lead compare them fairly without retrofitting the decision criteria."
+    },
+    {
+      "id": "44fe2da1e5e40b65",
+      "text": "Hand a generated API client from producer to mobile consumer to integration verifier through receiver-owned proof gates."
+    },
+    {
+      "id": "2f82c1bbd74c58b0",
+      "text": "Transfer an implementation from builder to verifier, requiring the verifier to inspect raw artifacts and explicitly accept or reject it."
+    }
+  ]
+}
