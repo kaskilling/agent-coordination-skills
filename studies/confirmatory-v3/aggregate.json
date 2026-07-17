@@ -1,0 +1,412 @@
+{
+  "schema_version": "cib-confirmatory-summary/3",
+  "confirmed": false,
+  "claim_scope": "outcome_aware_harness_repaired_direct_replication_fixed_corpus",
+  "estimand": "end_to_end_assignment_effect_operational_itt",
+  "posterior": {
+    "draws": 200000,
+    "seed": 20260717,
+    "prior": [
+      0.5,
+      0.5
+    ],
+    "rng": "numpy-2.4.1-PCG64",
+    "false_difference": {
+      "mean": 0.19530834353582857,
+      "credible_95": [
+        0.13978177061451263,
+        0.24986429968124818
+      ],
+      "probability_greater_than_zero": 1.0
+    },
+    "true_difference": {
+      "mean": 0.000021288875624701785,
+      "credible_95": [
+        -0.05123661786654944,
+        0.05132977469966228
+      ],
+      "probability_greater_than_margin": 0.99993,
+      "margin": -0.1
+    }
+  },
+  "convergence_check": {
+    "draws": 200000,
+    "seed": 20260718,
+    "prior": [
+      0.5,
+      0.5
+    ],
+    "rng": "numpy-2.4.1-PCG64",
+    "false_difference": {
+      "mean": 0.1953009343852836,
+      "credible_95": [
+        0.1399291400553216,
+        0.24970762118251416
+      ],
+      "probability_greater_than_zero": 1.0
+    },
+    "true_difference": {
+      "mean": 0.00004173656176538647,
+      "credible_95": [
+        -0.0510258110993118,
+        0.05143144496715736
+      ],
+      "probability_greater_than_margin": 0.99991,
+      "margin": -0.1
+    }
+  },
+  "adverse_scenario": {
+    "assignment": "missing_iff_zero_missing_if_one",
+    "posterior": {
+      "draws": 200000,
+      "seed": 20260717,
+      "prior": [
+        0.5,
+        0.5
+      ],
+      "rng": "numpy-2.4.1-PCG64",
+      "false_difference": {
+        "mean": 0.19530834353582857,
+        "credible_95": [
+          0.13978177061451263,
+          0.24986429968124818
+        ],
+        "probability_greater_than_zero": 1.0
+      },
+      "true_difference": {
+        "mean": 0.000021288875624701785,
+        "credible_95": [
+          -0.05123661786654944,
+          0.05132977469966228
+        ],
+        "probability_greater_than_margin": 0.99993,
+        "margin": -0.1
+      }
+    },
+    "convergence_check": {
+      "draws": 200000,
+      "seed": 20260718,
+      "prior": [
+        0.5,
+        0.5
+      ],
+      "rng": "numpy-2.4.1-PCG64",
+      "false_difference": {
+        "mean": 0.1953009343852836,
+        "credible_95": [
+          0.1399291400553216,
+          0.24970762118251416
+        ],
+        "probability_greater_than_zero": 1.0
+      },
+      "true_difference": {
+        "mean": 0.00004173656176538647,
+        "credible_95": [
+          -0.0510258110993118,
+          0.05143144496715736
+        ],
+        "probability_greater_than_margin": 0.99991,
+        "margin": -0.1
+      }
+    },
+    "gates": {
+      "false_superiority": true,
+      "true_noninferiority": true,
+      "strict_necessary_use": true,
+      "strict_avoided_unnecessary_use": false,
+      "positive_family_effects": true
+    },
+    "observed": {
+      "strict_necessary_use": 1.0,
+      "strict_avoided_unnecessary_use": 0.296875,
+      "positive_family_effects": 8
+    },
+    "family_effects": {
+      "artifact-room": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.08333333333333333,
+        "false_iff_minus_if": 0.08333333333333333,
+        "true_iff_minus_if": 0.0
+      },
+      "blind-arbitration": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.08333333333333333,
+        "false_iff_minus_if": 0.08333333333333333,
+        "true_iff_minus_if": 0.0
+      },
+      "gated-handoff": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.125,
+        "false_iff_minus_if": 0.125,
+        "true_iff_minus_if": 0.0
+      },
+      "hypothesis-duel": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.9166666666666666,
+        "false_iff_minus_if": 0.6666666666666666,
+        "true_iff_minus_if": 0.0
+      },
+      "peer-deliberation": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.20833333333333334,
+        "false_iff_minus_if": 0.20833333333333334,
+        "true_iff_minus_if": 0.0
+      },
+      "proof-split": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.25,
+        "false_iff_minus_if": 0.25,
+        "true_iff_minus_if": 0.0
+      },
+      "second-round": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.625,
+        "false_iff_minus_if": 0.5833333333333334,
+        "true_iff_minus_if": 0.0
+      },
+      "slice-and-integrate": {
+        "necessary_use": 1.0,
+        "avoided_unnecessary_use": 0.08333333333333333,
+        "false_iff_minus_if": 0.08333333333333333,
+        "true_iff_minus_if": 0.0
+      }
+    },
+    "draws": 200000
+  },
+  "gates": {
+    "operational_false_superiority": true,
+    "operational_true_noninferiority": true,
+    "operational_strict_necessary_use": true,
+    "operational_strict_avoided_unnecessary_use": false,
+    "operational_positive_family_effects": true,
+    "adverse_false_superiority": true,
+    "adverse_true_noninferiority": true,
+    "adverse_strict_necessary_use": true,
+    "adverse_strict_avoided_unnecessary_use": false,
+    "adverse_positive_family_effects": true,
+    "harness_failures": true,
+    "integrity": true,
+    "cache_seed_integrity": true
+  },
+  "observed": {
+    "strict_necessary_use": 1.0,
+    "strict_avoided_unnecessary_use": 0.296875,
+    "positive_family_effects": 8,
+    "harness_failure_rate": 0.0,
+    "invalid_families": [],
+    "cache_invalid_families": []
+  },
+  "behavioral_complete_case": {
+    "label": "conditional_on_terminal_agent_opportunity_non_gating",
+    "by_family": {
+      "artifact-room": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.08333333333333333,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.125
+      },
+      "blind-arbitration": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.08333333333333333,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.125
+      },
+      "gated-handoff": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.125,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.125
+      },
+      "hypothesis-duel": {
+        "if:true": 1.0,
+        "if:false": 0.25,
+        "iff:true": 1.0,
+        "iff:false": 0.9166666666666666,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.8333333333333334
+      },
+      "peer-deliberation": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.20833333333333334,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.25
+      },
+      "proof-split": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.25,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.20833333333333334
+      },
+      "second-round": {
+        "if:true": 1.0,
+        "if:false": 0.041666666666666664,
+        "iff:true": 1.0,
+        "iff:false": 0.625,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.6666666666666666
+      },
+      "slice-and-integrate": {
+        "if:true": 1.0,
+        "if:false": 0.0,
+        "iff:true": 1.0,
+        "iff:false": 0.08333333333333333,
+        "if_else_not:true": 1.0,
+        "if_else_not:false": 0.16666666666666666
+      }
+    }
+  },
+  "missingness": {
+    "total": 0,
+    "by_family": {
+      "artifact-room": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "blind-arbitration": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "gated-handoff": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "hypothesis-duel": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "peer-deliberation": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "proof-split": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "second-round": {
+        "by_class": {},
+        "by_arm_truth": {}
+      },
+      "slice-and-integrate": {
+        "by_class": {},
+        "by_arm_truth": {}
+      }
+    }
+  },
+  "secondary_contrasts": {
+    "expanded_minus_if_false": 0.2760416666666667,
+    "expanded_minus_iff_false": 0.015625000000000007,
+    "expanded_minus_if_true": 0.0,
+    "expanded_minus_iff_true": 0.0
+  },
+  "family_effects": {
+    "artifact-room": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.08333333333333333,
+      "false_iff_minus_if": 0.08333333333333333,
+      "true_iff_minus_if": 0.0
+    },
+    "blind-arbitration": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.08333333333333333,
+      "false_iff_minus_if": 0.08333333333333333,
+      "true_iff_minus_if": 0.0
+    },
+    "gated-handoff": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.125,
+      "false_iff_minus_if": 0.125,
+      "true_iff_minus_if": 0.0
+    },
+    "hypothesis-duel": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.9166666666666666,
+      "false_iff_minus_if": 0.6666666666666666,
+      "true_iff_minus_if": 0.0
+    },
+    "peer-deliberation": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.20833333333333334,
+      "false_iff_minus_if": 0.20833333333333334,
+      "true_iff_minus_if": 0.0
+    },
+    "proof-split": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.25,
+      "false_iff_minus_if": 0.25,
+      "true_iff_minus_if": 0.0
+    },
+    "second-round": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.625,
+      "false_iff_minus_if": 0.5833333333333334,
+      "true_iff_minus_if": 0.0
+    },
+    "slice-and-integrate": {
+      "necessary_use": 1.0,
+      "avoided_unnecessary_use": 0.08333333333333333,
+      "false_iff_minus_if": 0.08333333333333333,
+      "true_iff_minus_if": 0.0
+    }
+  },
+  "sensitivity_beta_1_1": {
+    "draws": 200000,
+    "seed": 20260717,
+    "prior": [
+      1.0,
+      1.0
+    ],
+    "rng": "numpy-2.4.1-PCG64",
+    "false_difference": {
+      "mean": 0.1562084758563319,
+      "credible_95": [
+        0.09752907828485441,
+        0.21433476681758493
+      ],
+      "probability_greater_than_zero": 1.0
+    },
+    "true_difference": {
+      "mean": 0.000018067117903516426,
+      "credible_95": [
+        -0.056637903625033195,
+        0.056518027776779646
+      ],
+      "probability_greater_than_margin": 0.999745,
+      "margin": -0.1
+    }
+  },
+  "provenance": {
+    "protocol": "confirmatory-v3",
+    "freeze_tag": "confirmatory-v3-preregistered",
+    "repository_commit": "8d83d4548d2e18467e1dfa23d0c2b0aa260829f9",
+    "cib_commit": "e9e77bfd598319fe0d7049c74943c15f556a61ac",
+    "runtime_versions": {
+      "cib": "0.5.3",
+      "promptfoo": "0.121.19",
+      "codex_sdk": "0.144.5",
+      "node": "v25.8.2",
+      "npm": "11.11.1",
+      "cib_python": "3.14.2"
+    },
+    "backend": "promptfoo-codex-sdk",
+    "model_alias": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "placement": "skill_description",
+    "execution_window_utc": {
+      "started": "2026-07-17T22:02:15.327158+00:00",
+      "finished": "2026-07-17T23:31:34.757279+00:00"
+    },
+    "parallel_studies": 1,
+    "excluded_warmup_calls": 8,
+    "primary_model_calls": 1152
+  }
+}

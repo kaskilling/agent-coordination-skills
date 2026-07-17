@@ -223,6 +223,16 @@ operationally; and requires the same wording gates to pass a worst-case
 missing-data sensitivity. Its protocol lock must be merged and tagged before
 any v3 corpus call.
 
+The frozen v3 execution is complete. Its
+[valid negative result](studies/confirmatory-v3/RESULTS.md) found a strong
+relative false-case improvement for strict IFF over plain IF, met the frozen
+−10-point necessary-use non-inferiority gate with 100% observed rates in both
+arms, and had zero harness failures, but only 29.69% absolute unnecessary-use
+avoidance against the preregistered 80% requirement. The full
+[research report](docs/research/conditional-instruction-routing-v3.md) and
+[sanitized aggregate](studies/confirmatory-v3/aggregate.json) are public; raw
+trial evidence remains private.
+
 ## Design sources
 
 The collection layout follows primary-source conventions from:
