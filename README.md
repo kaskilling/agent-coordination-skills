@@ -173,15 +173,15 @@ agent runtime. It is not intended for ordinary documentation-only changes.
 
 Run the manual **Check peer-deliberation routing** GitHub workflow after adding a
 dedicated `OPENAI_API_KEY` repository secret. The workflow pins Conditional
-Instruction Benchmark v0.5.0 by commit and uploads its safe report; it does not
+Instruction Benchmark v0.5.1 by commit and uploads its safe report; it does not
 publish raw prompts or private evidence.
 
 For a local run, prepare a
-[CIB v0.5.0](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.5.0)
+[CIB v0.5.1](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.5.1)
 checkout, then run the public config with a private output directory:
 
 ```sh
-git clone --branch v0.5.0 \
+git clone --branch v0.5.1 \
   https://github.com/kalibraring/conditional-instruction-benchmark.git
 cd conditional-instruction-benchmark
 uv sync --frozen
@@ -205,8 +205,16 @@ extends that dogfood check to all eight coordination skills: 64 indexed
 required/unnecessary pairs, three repetitions, three wording arms, and 1,152
 model calls. Its protocol lock, blind taxonomy evidence, runner, integrity
 checks, inference code, and exact reproduction environment are versioned with
-the study. Raw prompts, nonces, sessions, transcripts, and credentials remain
-in ignored local results; only sanitized aggregate evidence is publishable.
+the study. The 128 task strings are intentionally public protocol fixtures.
+Materialized agent prompts, nonces, sessions, transcripts, and credentials
+remain in ignored local results; only sanitized aggregate evidence is
+publishable.
+
+Its first execution is
+[invalid and excluded](studies/confirmatory-v1/EXECUTION-STATUS.md). The
+[confirmatory-v2 preregistration](studies/confirmatory-v2/PREREGISTRATION.md)
+freezes the identical corpus and analysis against CIB v0.5.1's repaired
+process-isolation layer before any v2 model call.
 
 ## Design sources
 
