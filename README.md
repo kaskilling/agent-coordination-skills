@@ -112,7 +112,10 @@ All eight skills apply the same operating invariants:
 
 ```text
 .codex-plugin/plugin.json
+.github/workflows/cib.yml
 .github/workflows/validate.yml
+cib.yaml
+docs/dogfood/
 scripts/validate_skills.py
 skills.sh.json
 skills/
@@ -150,6 +153,50 @@ scanning or review.
 
 Behavioral evaluation remains separate because model grading is nondeterministic.
 Forward-test a changed skill on a realistic task before releasing it.
+
+### Behavioral dogfood
+
+[`cib.yaml`](cib.yaml) causally checks the public activation boundary for
+`peer-deliberation`: does a strict conditional instruction make Codex use the
+designated resource when direct peer exchange is required, while avoiding it for
+blind proposals, proof splitting, and single-reviewer work?
+
+The preregistered check contains three matched required/unnecessary case pairs,
+two repetitions, and three causal arms: 36 model calls in total. It passes when
+required use and avoided unnecessary use are each at least 80%, with no more than
+5% harness failures. These thresholds were fixed before the first run. The
+first completed run took about 12 minutes and 4 million total tokens; monetary
+cost depends on model access, pricing, and cache behavior.
+
+Run it before releasing a change to the activation boundary, cases, model, or
+agent runtime. It is not intended for ordinary documentation-only changes.
+
+Run the manual **Check peer-deliberation routing** GitHub workflow after adding a
+dedicated `OPENAI_API_KEY` repository secret. The workflow pins Conditional
+Instruction Benchmark v0.4.0 by commit and uploads its safe report; it does not
+publish raw prompts or private evidence.
+
+For a local run, prepare a
+[CIB v0.4.0](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.4.0)
+checkout, then run the public config with a private output directory:
+
+```sh
+git clone --branch v0.4.0 \
+  https://github.com/kalibraring/conditional-instruction-benchmark.git
+cd conditional-instruction-benchmark
+uv sync --frozen
+npm ci
+uv run cib check /path/to/agent-coordination-skills/cib.yaml \
+  --output-dir /path/to/private-results/peer-deliberation-routing
+```
+
+This check proves routing of CIB's designated canary resource under the encoded
+boundary. It does not prove that two real subagents were spawned or that every
+step in `skills/peer-deliberation/SKILL.md` was followed.
+
+See the [first dogfood result](docs/dogfood/peer-deliberation-routing-2026-07-17.md):
+the strict `if and only if` arm passed both selected routing thresholds, while
+the plain `if` arm used the resource in all six unnecessary-use trials.
 
 ## Design sources
 

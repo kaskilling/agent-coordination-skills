@@ -1,0 +1,36 @@
+name: Check peer-deliberation routing
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout collection
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Require a dedicated OpenAI API key
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::Configure the OPENAI_API_KEY repository secret before running this workflow."
+            exit 1
+          fi
+
+      - name: Run causal instruction check
+        id: cib
+        uses: kalibraring/conditional-instruction-benchmark@2fa1021197411309a967988a3421aaafb14c1226 # v0.4.0
+        with:
+          config: cib.yaml
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          artifact-name: peer-deliberation-routing
+
+      - name: Show safe report location
+        run: |
+          echo "Report artifact path: ${{ steps.cib.outputs.report-path }}"
