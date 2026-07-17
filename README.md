@@ -173,15 +173,15 @@ agent runtime. It is not intended for ordinary documentation-only changes.
 
 Run the manual **Check peer-deliberation routing** GitHub workflow after adding a
 dedicated `OPENAI_API_KEY` repository secret. The workflow pins Conditional
-Instruction Benchmark v0.4.0 by commit and uploads its safe report; it does not
+Instruction Benchmark v0.5.0 by commit and uploads its safe report; it does not
 publish raw prompts or private evidence.
 
 For a local run, prepare a
-[CIB v0.4.0](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.4.0)
+[CIB v0.5.0](https://github.com/kalibraring/conditional-instruction-benchmark/releases/tag/v0.5.0)
 checkout, then run the public config with a private output directory:
 
 ```sh
-git clone --branch v0.4.0 \
+git clone --branch v0.5.0 \
   https://github.com/kalibraring/conditional-instruction-benchmark.git
 cd conditional-instruction-benchmark
 uv sync --frozen

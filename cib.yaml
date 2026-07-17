@@ -1,4 +1,4 @@
-schema_version: cib-check/1
+schema_version: cib-check/2
 name: peer-deliberation-routing
 instruction:
   condition: the user asks two agents with distinct expertise to directly question, challenge, and revise each other before reaching a joint position
@@ -20,7 +20,8 @@ execution:
   repetitions: 2
   jobs: 4
   seed: 20260717
-  timeout_seconds: 1200
+  trial_timeout_seconds: 300
+  study_timeout_seconds: 1200
 thresholds:
   minimum_required_use_rate: 0.8
   minimum_avoided_unnecessary_use_rate: 0.8
