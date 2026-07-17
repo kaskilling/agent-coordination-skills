@@ -211,10 +211,17 @@ remain in ignored local results; only sanitized aggregate evidence is
 publishable.
 
 Its first execution is
-[invalid and excluded](studies/confirmatory-v1/EXECUTION-STATUS.md). The
-[confirmatory-v2 preregistration](studies/confirmatory-v2/PREREGISTRATION.md)
-freezes the identical corpus and analysis against CIB v0.5.1's repaired
-process-isolation layer before any v2 model call.
+[invalid and excluded](studies/confirmatory-v1/EXECUTION-STATUS.md). The frozen
+v2 replication is also [invalid and excluded](studies/confirmatory-v2/EXECUTION-STATUS.md):
+35 typed harness failures prevented its preregistered aggregate.
+
+The [confirmatory-v3 preregistration](studies/confirmatory-v3/PREREGISTRATION.md)
+freezes an outcome-aware, harness-repaired direct replication against CIB
+v0.5.3. It preserves the corpus, wording arms, seeds, estimands, and thresholds;
+adds a private per-family signed-cache bootstrap; analyzes all assignments
+operationally; and requires the same wording gates to pass a worst-case
+missing-data sensitivity. Its protocol lock must be merged and tagged before
+any v3 corpus call.
 
 ## Design sources
 

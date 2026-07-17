@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-artifact-room
+instruction:
+  condition: the task requires multiple agents to accumulate evidence or decisions in one durable canonical artifact with visible provenance and controlled writing
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Coordinate four reviewers through one shared evidence board; preserve each contribution's provenance and conflicts, with one canonical writer producing the final board."
+    - "Have several agents build a single durable decision record over time, showing proposals, challenges, and resolutions without concurrent edits to the canonical file."
+    - "Run a multi-agent investigation where all accepted findings must accumulate in one governed plan that later agents can inspect and extend."
+    - "Create one canonical compliance dossier from several specialist contributions, keeping source provenance, rejected claims, and conflict resolutions visible."
+    - "Maintain a shared incident evidence ledger across multiple agent shifts, with one writer applying accepted updates and preserving the decision trail."
+    - "Have several researchers contribute to one durable literature map that records evidence lineage, contradictions, and the lead's canonical synthesis."
+    - "Build a single program plan from parallel workstream updates while preventing concurrent-edit damage and retaining every accepted change's owner."
+    - "Evolve one canonical domain glossary through specialist proposals and challenges so later agents inherit the resolved terms and unresolved conflicts."
+  unnecessary:
+    - "Collect three independent architecture proposals without letting authors see one another, then rank them against criteria fixed in advance."
+    - "Move a contract from designer to implementer to verifier, and require each receiver to inspect raw proof before accepting the handoff."
+    - "An outage has three plausible causes; assign rival hypotheses, require falsifiers, and run tests that distinguish their predictions."
+    - "Have a database expert and API designer directly challenge each other's consistency model and reconcile one joint recommendation."
+    - "Split a release audit across code, tests, docs, packaging, and CI as independent proof surfaces, then synthesize one conclusion."
+    - "Bring a fresh adversarial reviewer to a finished implementation, apply supported fixes, and review the revised state again."
+    - "Build search, saved filters, and export as independently owned end-to-end slices, then integrate and test their seams."
+    - "Summarize the public methods of this one Python class in five bullets; do not delegate or create shared project state."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 827193328
+  trial_timeout_seconds: 600
+  study_timeout_seconds: 3000
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05
