@@ -151,6 +151,34 @@ scanning or review.
 Behavioral evaluation remains separate because model grading is nondeterministic.
 Forward-test a changed skill on a realistic task before releasing it.
 
+### Behavioral dogfood
+
+[`cib.yaml`](cib.yaml) causally checks the public activation boundary for
+`peer-deliberation`: does a strict conditional instruction make Codex use the
+designated resource when direct peer exchange is required, while avoiding it for
+blind proposals, proof splitting, and single-reviewer work?
+
+The preregistered check contains three matched required/unnecessary case pairs,
+two repetitions, and three causal arms: 36 model calls in total. It passes when
+required use and avoided unnecessary use are each at least 80%, with no more than
+5% harness failures. These thresholds were fixed before the first run.
+
+Run the manual **Check peer-deliberation routing** GitHub workflow after adding a
+dedicated `OPENAI_API_KEY` repository secret. The workflow pins Conditional
+Instruction Benchmark v0.4.0 by commit and uploads its safe report; it does not
+publish raw prompts or private evidence.
+
+For a local run, use a v0.4.0 CIB checkout with its dependencies installed:
+
+```sh
+uv run cib check /path/to/agent-coordination-skills/cib.yaml \
+  --output-dir /path/to/private-results/peer-deliberation-routing
+```
+
+This check proves routing of CIB's designated canary resource under the encoded
+boundary. It does not prove that two real subagents were spawned or that every
+step in `skills/peer-deliberation/SKILL.md` was followed.
+
 ## Design sources
 
 The collection layout follows primary-source conventions from:

@@ -1,0 +1,27 @@
+schema_version: cib-check/1
+name: peer-deliberation-routing
+instruction:
+  condition: the user asks two agents with distinct expertise to directly question, challenge, and revise each other before reaching a joint position
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Have an API designer and mobile engineer debate this contract for three exchanges, challenge each other, then reconcile one joint recommendation."
+    - "Ask a security engineer and platform architect to directly question each other's deployment plan and converge on one evidence-backed position."
+    - "Let a product manager and backend engineer exchange critiques of these rollout options, revise their views, and return agreements plus unresolved disagreement."
+  unnecessary:
+    - "Ask an API designer and mobile engineer for independent first-pass proposals, keep them blind, then adjudicate against explicit criteria."
+    - "Split this audit between a security engineer and platform architect across independent proof surfaces, then synthesize the findings."
+    - "Have one reviewer inspect the completed rollout plan, fix accepted findings, and re-review the result."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 2
+  jobs: 4
+  seed: 20260717
+  timeout_seconds: 300
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05
