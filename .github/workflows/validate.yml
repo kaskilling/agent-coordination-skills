@@ -29,6 +29,7 @@ jobs:
         run: |
           python3 scripts/validate_skills.py
           python3 scripts/validate_confirmatory_protocol.py
+          python3 scripts/validate_confirmatory_v2_protocol.py
           python3 -m unittest discover -s tests -p 'test_*.py'
 
       - name: Validate Agent Skills specification
