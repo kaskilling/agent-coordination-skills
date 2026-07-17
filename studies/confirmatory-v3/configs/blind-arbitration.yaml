@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-blind-arbitration
+instruction:
+  condition: the task requires independent first-pass submissions to remain uninfluenced before a lead adjudicates them against explicit criteria
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Ask three engineers for independent migration proposals, prevent cross-contamination, then have a lead score them against criteria declared before disclosure."
+    - "Obtain two blind security judgments, reveal only controlled evidence for one challenge round, and record a traceable final adjudication."
+    - "Keep model-vendor evaluations compartmentalized until each first pass is frozen, then rank the submissions with a neutral rubric."
+    - "Commission four independent incident assessments, conceal identities and conclusions until submission, then let one lead adjudicate against a frozen evidence rubric."
+    - "Gather competing product forecasts without cross-talk, disclose only normalized evidence for one controlled challenge, and record the final ranking."
+    - "Ask two legal reviewers for uninfluenced first opinions, keep their work compartmentalized, then resolve the choice against criteria declared in advance."
+    - "Run a blind benchmark of three agent designs, freeze every first pass before disclosure, and let an adjudicator select with a traceable scorecard."
+    - "Collect independent risk estimates from specialists who cannot communicate, then have a lead compare them fairly without retrofitting the decision criteria."
+  unnecessary:
+    - "Accumulate several agents' findings in one canonical evidence board with visible provenance and a single controlled writer."
+    - "Pass a completed data contract from its author to a downstream consumer who must inspect raw proof and explicitly accept or reject it."
+    - "A cache regression has several plausible causes; assign competing hypotheses and run discriminating tests that could falsify each one."
+    - "Let a security engineer and platform architect directly question each other's deployment plan and converge on one evidence-backed position."
+    - "Divide this incident investigation across logs, code, infrastructure, and runbooks in parallel, then synthesize the independent proof surfaces."
+    - "Give the finished rollout plan to a fresh critical reviewer, apply accepted fixes, and re-review the changed plan."
+    - "Implement onboarding, account recovery, and session management as separate vertical slices, then integrate them under one contract."
+    - "Convert this single timestamp to UTC and explain the result without using additional agents."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 511440406
+  trial_timeout_seconds: 600
+  study_timeout_seconds: 3000
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

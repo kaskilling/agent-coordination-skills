@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-second-round
+instruction:
+  condition: a completed first-pass artifact or implementation needs a fresh independent adversarial review, accepted fixes, and another review of the revised result
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "A first-pass implementation is complete; bring in a fresh reviewer to research comparable patterns, find gaps, apply accepted fixes, and review the revised state again."
+    - "Stress-test this finished product plan with an independent adversarial second round, revise it from supported findings, and state the remaining risk after re-review."
+    - "Review the completed repository from a new surface, prioritize actionable defects, fix them, and repeat review until remaining concerns are explicit."
+    - "The architecture proposal already has a first pass; commission an independent challenge, revise supported weaknesses, and have the reviewer inspect the new version."
+    - "After the initial security remediation is complete, use a fresh adversarial surface to find residual gaps, fix accepted issues, and re-review."
+    - "Take the finished documentation rewrite through an independent comparable-pattern review, apply justified changes, and inspect the final document again."
+    - "A prototype has already been implemented; ask a new reviewer to test assumptions, accept or reject findings, improve it, and run another review round."
+    - "The migration plan is complete; perform a fresh critical pass, make evidence-backed corrections, and explicitly assess the revised plan's remaining risk."
+  unnecessary:
+    - "Maintain one canonical multi-agent decision record with provenance, controlled writing, and visible unresolved conflicts."
+    - "Collect independent design proposals without cross-contamination and let a lead rank them against a preregistered rubric."
+    - "Advance a contract from author to implementer to verifier through receiver-owned acceptance gates."
+    - "The failure has three plausible causes; assign competing hypotheses, state falsifiers, and run tests that make the explanations predict different results."
+    - "Have two domain experts directly challenge and revise each other's design positions before returning one joint view."
+    - "Split an initial audit across code, tests, docs, packaging, and CI in parallel, then synthesize one evidence-backed conclusion."
+    - "Build import, validation, and export as independent end-to-end slices, then integrate and verify the seams."
+    - "Correct the spelling in this one heading and show the diff; no completed work needs a fresh review loop."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 854801388
+  trial_timeout_seconds: 600
+  study_timeout_seconds: 3000
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

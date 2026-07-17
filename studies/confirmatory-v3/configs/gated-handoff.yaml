@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-gated-handoff
+instruction:
+  condition: the task is a dependent multi-stage pipeline where each downstream owner must inspect artifacts and proof before accepting upstream work
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Move a schema change from designer to implementer to verifier, but let each receiver inspect raw artifacts and own an explicit acceptance gate before work advances."
+    - "Run a research-to-spec-to-build pipeline where every stage can reject the incoming package with evidence and the sender cannot self-certify acceptance."
+    - "Transfer a release candidate through security, operations, and release owners sequentially, recording each receiver's acceptance criteria and decision."
+    - "Move a dataset from collector to cleaner to analyst, with each receiver inspecting the raw package and explicitly accepting or rejecting it before continuing."
+    - "Hand a generated API client from producer to mobile consumer to integration verifier through receiver-owned proof gates."
+    - "Advance a policy draft through author, legal reviewer, and publisher only when each downstream owner accepts the incoming artifact against declared evidence."
+    - "Run model training, evaluation, safety review, and deployment as dependent stages where no sender may self-certify the next gate."
+    - "Transfer a migration plan through database, service, and operations owners, preserving every rejection reason and revised resubmission."
+  unnecessary:
+    - "Coordinate several agents through one shared evidence ledger with a single canonical writer and durable provenance."
+    - "Keep three vendor assessments blind until first passes are frozen, then adjudicate them with a predeclared scorecard."
+    - "An intermittent failure has rival causes; assign hypothesis owners, state falsifiers, and run discriminating tests."
+    - "Have a product manager and backend engineer exchange critiques directly, revise their positions, and return a joint rollout recommendation."
+    - "Inspect code, tests, documentation, and packaging through independent parallel proof surfaces, then reconcile all findings."
+    - "Ask a fresh reviewer to challenge the completed release, apply accepted fixes, and review the revised state."
+    - "Build checkout, refund, and receipt flows as independent vertical slices, then integrate them under one product contract."
+    - "Rename this local variable for clarity and run its focused unit test; no staged delegation is required."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 1324571184
+  trial_timeout_seconds: 600
+  study_timeout_seconds: 3000
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

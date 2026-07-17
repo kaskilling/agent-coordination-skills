@@ -6,6 +6,10 @@
   commit-pinned GitHub Action that publishes only the safe report artifact.
 - Publish the first 36-trial dogfood result, including the invalid pilot,
   operational timeout amendment, arm-level outcomes, and claim boundary.
+- Record confirmatory v2 as invalid after 35 typed harness failures.
+- Freeze confirmatory v3 as an outcome-aware, harness-repaired direct
+  replication with signed-cache provenance, operational assignment analysis,
+  adverse missing-data gates, and auditable sequential chronology.
 
 ## 0.2.1 - 2026-07-13
 
