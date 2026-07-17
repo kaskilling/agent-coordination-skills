@@ -198,6 +198,16 @@ See the [first dogfood result](docs/dogfood/peer-deliberation-routing-2026-07-17
 the strict `if and only if` arm passed both selected routing thresholds, while
 the plain `if` arm used the resource in all six unnecessary-use trials.
 
+### Confirmatory study
+
+The [frozen confirmatory-v1 protocol](studies/confirmatory-v1/PREREGISTRATION.md)
+extends that dogfood check to all eight coordination skills: 64 indexed
+required/unnecessary pairs, three repetitions, three wording arms, and 1,152
+model calls. Its protocol lock, blind taxonomy evidence, runner, integrity
+checks, inference code, and exact reproduction environment are versioned with
+the study. Raw prompts, nonces, sessions, transcripts, and credentials remain
+in ignored local results; only sanitized aggregate evidence is publishable.
+
 ## Design sources
 
 The collection layout follows primary-source conventions from:

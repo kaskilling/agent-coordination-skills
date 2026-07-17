@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-hypothesis-duel
+instruction:
+  condition: a hard failure has several plausible causes that require competing causal hypotheses, discriminating tests, and self-falsification
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "The deployment fails intermittently and logs support three causes; assign rival hypotheses, require different predictions, and run the cheapest discriminating tests."
+    - "Two recovery attempts did not move the database corruption issue; have hypothesis owners state what would falsify them and challenge competing explanations with fresh evidence."
+    - "Latency regressed after several simultaneous changes and the team is anchored on caching; force competing causal accounts and finish with one surviving cause or bounded unknown."
+    - "A flaky payment test has four credible causes; make each owner predict different evidence, challenge the alternatives, and eliminate theories with targeted experiments."
+    - "Memory usage doubled with conflicting profiler evidence; assign rival causal models, require self-falsification, and choose the next test by information gain."
+    - "The mobile crash appears after two unrelated releases; prevent anchoring by giving owners competing causes and tests that cannot support every theory at once."
+    - "A data mismatch survives two attempted fixes; compare upstream, transformation, and caching hypotheses through explicit predictions and fresh first-failure artifacts."
+    - "Throughput collapsed but metrics disagree about CPU, locks, and network saturation; run a bounded evidence duel rather than diagnosing by vote."
+  unnecessary:
+    - "Have several agents maintain one canonical incident ledger with visible provenance, conflicts, and a single writer."
+    - "Collect independent remediation proposals blindly, then adjudicate them against criteria frozen before disclosure."
+    - "Move a release artifact sequentially from builder to security reviewer to operator through receiver-owned acceptance gates."
+    - "Let a database specialist and reliability engineer directly challenge their capacity plans and reconcile one position."
+    - "Research the library behavior from official docs, source code, and a minimal reproduction in parallel, then synthesize the evidence."
+    - "A finished pull request needs a fresh adversarial reviewer to find gaps, recommend fixes, and re-review the accepted changes."
+    - "Build this feature through three independent end-to-end slices with exclusive file ownership, then integrate and validate the complete behavior."
+    - "Add a docstring to this deterministic helper and run its existing unit test; there is no unresolved failure to diagnose."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 110530623
+  trial_timeout_seconds: 300
+  study_timeout_seconds: 5400
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

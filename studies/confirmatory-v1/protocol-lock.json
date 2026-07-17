@@ -1,0 +1,73 @@
+{
+  "schema_version": "cib-confirmatory-protocol-lock/1",
+  "cib_release": {
+    "version": "v0.5.0",
+    "commit": "84126513f487df605b45f8bb4286246ba1801e5a",
+    "runtime": {
+      "cib": "0.5.0",
+      "promptfoo": "0.121.19",
+      "codex_sdk": "0.144.5",
+      "lock_sha256": {
+        "package-lock.json": "71e16269c4aa956ce2af276a7d1bdb42eb648ddf1a33ce1dc285bba8a2fca9df",
+        "uv.lock": "6b67e152ea4ce52a508e37c3990186b4b512397115d2f3c9a04de0d9db9cfd04"
+      }
+    }
+  },
+  "design": {
+    "families": 8,
+    "pairs_per_family": 8,
+    "repetitions": 3,
+    "arms": 3,
+    "truth_values": 2,
+    "trials_per_family": 144,
+    "total_trials": 1152,
+    "seed": 20260717,
+    "family_seeds": {
+      "artifact-room": 827193328,
+      "blind-arbitration": 511440406,
+      "gated-handoff": 1324571184,
+      "hypothesis-duel": 110530623,
+      "peer-deliberation": 201273059,
+      "proof-split": 1833834039,
+      "second-round": 854801388,
+      "slice-and-integrate": 607270051
+    },
+    "planned_family_order": [
+      "hypothesis-duel",
+      "second-round",
+      "artifact-room",
+      "slice-and-integrate",
+      "peer-deliberation",
+      "blind-arbitration",
+      "gated-handoff",
+      "proof-split"
+    ]
+  },
+  "files": {
+    ".gitignore": "596a35084c0b18b3d12cb8fbde59d4b9767dfeaeabf488f50ea5b5b1244f7cd5",
+    "studies/confirmatory-v1/PREREGISTRATION.md": "ca2a1163b40a193ecf2434603b395a60d84a5d3535ee147e2b44e8f01bce329e",
+    "studies/confirmatory-v1/requirements.txt": "d099873bdbe0e45682167d67ea04bde2ca22d4a1e34fd0991b1ce90265d14510",
+    "studies/confirmatory-v1/configs/artifact-room.yaml": "8343992952b305bfeaf43f951f7340aeda79b353266eb36ad01b95151eb46a8f",
+    "studies/confirmatory-v1/configs/blind-arbitration.yaml": "aba54290bfefc81969f3677e9c11c4fd81a646b13e7f74e0c899d39c409da00e",
+    "studies/confirmatory-v1/configs/gated-handoff.yaml": "be69a164945da0129a7178a1ad2185c43ecd52939aca79a9d91b8b44ebcd286f",
+    "studies/confirmatory-v1/configs/hypothesis-duel.yaml": "862b5b6c8450f003703babe9d1c2a2cf1ef3e1728ce3af2d42539f5fdafbcbd9",
+    "studies/confirmatory-v1/configs/peer-deliberation.yaml": "25a1d5e3dd4fe175a7f10b191702e19670526e755fa20cf47767629f822ec1de",
+    "studies/confirmatory-v1/configs/proof-split.yaml": "1cb120f98df37c729e518fff8b5f1774bb32c1835e03876e8dc7a78484487cac",
+    "studies/confirmatory-v1/configs/second-round.yaml": "c1a9eea4f06cd76688d4f66a4cd145c3de451370e39575af56b14242720c6e27",
+    "studies/confirmatory-v1/configs/slice-and-integrate.yaml": "05666b249dc801cdec0f6e6ccd72eef13f4186b6d31cb7f474e41306b4cdd1ed",
+    "studies/confirmatory-v1/taxonomy-contract.json": "e0cd1a696287939509206b897538c896cff139b78c147d00e0af505b991da7bb",
+    "studies/confirmatory-v1/taxonomy-review.json": "fdc83ff49864e3dc2d63ffe0ebc9b42e33d17a3d799086f935093d5c6eba849a",
+    "studies/confirmatory-v1/taxonomy-evidence/answer-key.json": "157c59cda8b4c3f670adc810656edfbbe512f944ae764821a7432ed2eb8d1f62",
+    "studies/confirmatory-v1/taxonomy-evidence/blind-packet.json": "dff6ed87ffa0293df5424cd5d97f3886c820d66451a2dafb0ccd5017b326abf0",
+    "studies/confirmatory-v1/taxonomy-evidence/check-result.json": "d0d506e25de44be7f864ef4046e50cf4d9c1da6ddc94a46f35e7407ea15cd31d",
+    "studies/confirmatory-v1/taxonomy-evidence/review-a.json": "085b3a31892410699bb44290b888d18d36c8a874bb8b891c453800d22895864f",
+    "studies/confirmatory-v1/taxonomy-evidence/review-b.json": "085b3a31892410699bb44290b888d18d36c8a874bb8b891c453800d22895864f",
+    "scripts/run_cib_confirmatory.py": "249ba69235edc853fae3b0ccba163070889990114125bc36c0a281ff7bb160b1",
+    "scripts/summarize_cib_confirmatory.py": "fc1245e8635b193350c9ebad7dcfc2ff3bf08792d43b1992d4ea20bab13ee5fc",
+    "scripts/build_blind_taxonomy_packet.py": "c5ce9dafbc870c28db702da01f8dd5b8c759f0da987681aef2bbadc0d80f216c",
+    "scripts/check_blind_taxonomy_reviews.py": "d54e63caf50a42c6cecdb4043dae0f611175e4f714306ac24e1d8e1d544817f1",
+    "scripts/validate_skills.py": "5d60e30464b73aa2e010a14e30c802c1ef2a13223b433fbfc5f46ff947647bf6",
+    "scripts/validate_confirmatory_protocol.py": "21ef2844f7efe8ef19b92fb705c9256a287da4f7daea82da3cab4dbcfba931f3",
+    "tests/test_confirmatory_analysis.py": "2f4110540050fa60b3c18ce5887753b3c60c470961c7dcc49c6c5255747f685c"
+  }
+}

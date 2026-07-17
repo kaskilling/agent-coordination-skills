@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -221,9 +222,17 @@ def validate_inventory(skill_names: list[str], errors: list[str]) -> None:
 
 
 def validate_privacy(errors: list[str]) -> None:
-    ignored = {".git", ".validation", "__pycache__"}
-    for path in ROOT.rglob("*"):
-        if not path.is_file() or any(part in ignored for part in path.parts):
+    completed = subprocess.run(
+        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
+        cwd=ROOT,
+        capture_output=True,
+        check=True,
+    )
+    for relative in completed.stdout.decode("utf-8").split("\0"):
+        if not relative:
+            continue
+        path = ROOT / relative
+        if not path.is_file():
             continue
         if path.resolve() == Path(__file__).resolve():
             continue

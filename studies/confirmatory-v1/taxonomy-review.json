@@ -1,0 +1,24 @@
+{
+  "schema_version": "cib-blind-taxonomy-review/1",
+  "review_topology": "two_independent_blind_reviewers",
+  "review_process": {
+    "sessions": 2,
+    "isolation": "separate_subagent_sessions",
+    "input": "blind_packet_only_without_answer_key_or_target_labels",
+    "outputs": [
+      "taxonomy-evidence/review-a.json",
+      "taxonomy-evidence/review-b.json"
+    ]
+  },
+  "prompt_count": 128,
+  "unanimous_correct": 128,
+  "passed": true,
+  "disagreements": [],
+  "sha256": {
+    "blind_packet": "dff6ed87ffa0293df5424cd5d97f3886c820d66451a2dafb0ccd5017b326abf0",
+    "answer_key": "157c59cda8b4c3f670adc810656edfbbe512f944ae764821a7432ed2eb8d1f62",
+    "review_a": "085b3a31892410699bb44290b888d18d36c8a874bb8b891c453800d22895864f",
+    "review_b": "085b3a31892410699bb44290b888d18d36c8a874bb8b891c453800d22895864f",
+    "check_result": "d0d506e25de44be7f864ef4046e50cf4d9c1da6ddc94a46f35e7407ea15cd31d"
+  }
+}

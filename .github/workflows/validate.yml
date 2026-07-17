@@ -23,10 +23,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install pinned validators
-        run: python3 -m pip install --disable-pip-version-check PyYAML==6.0.2 skills-ref==0.1.1
+        run: python3 -m pip install --disable-pip-version-check -r studies/confirmatory-v1/requirements.txt
 
       - name: Validate repository and Codex plugin contracts
-        run: python3 scripts/validate_skills.py
+        run: |
+          python3 scripts/validate_skills.py
+          python3 scripts/validate_confirmatory_protocol.py
+          python3 -m unittest discover -s tests -p 'test_*.py'
 
       - name: Validate Agent Skills specification
         run: |

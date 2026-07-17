@@ -1,0 +1,38 @@
+schema_version: cib-check/2
+name: confirmatory-slice-and-integrate
+instruction:
+  condition: a larger feature should be built through independently owned end-to-end vertical slices and then integrated under one contract
+  placement: skill_description
+  policy: strict
+cases:
+  required:
+    - "Build authentication, profile editing, and notification preferences as independent end-to-end user slices with exclusive ownership, then integrate and run broad validation."
+    - "Split this product increment by independently useful vertical behaviors rather than layers, give each slice narrow proof, and converge through one integration owner."
+    - "Implement three non-overlapping workflow slices in parallel, merge them in a declared order, test the seams, and obtain an independent integrated-state review."
+    - "Deliver catalog browsing, cart editing, and checkout as separate user-visible slices with narrow proofs and one integration owner."
+    - "Build ingestion, correction, and export workflows as independently useful vertical behaviors, then combine them and validate the shared contract."
+    - "Assign distinct owners to search, sharing, and offline access end to end, keep hot files exclusive, and integrate only after slice-level evidence."
+    - "Implement signup, consent management, and account deletion in parallel vertical slices, then batch broad validation after convergence."
+    - "Split the release by three complete operator journeys, prove each narrowly, merge in a fixed order, and review the integrated state independently."
+  unnecessary:
+    - "Coordinate several agents through one canonical planning artifact with a single writer and visible provenance."
+    - "Keep three architecture proposals blind until first passes are frozen, then adjudicate them against criteria fixed in advance."
+    - "Move one dependent artifact sequentially from researcher to designer to implementer, with each receiver owning an acceptance gate."
+    - "The regression has multiple credible causes; assign rival hypotheses and run tests that falsify or distinguish them."
+    - "Have an API designer and client engineer directly challenge each other's contract assumptions and converge on one recommendation."
+    - "Perform a read-only audit across code, tests, docs, packaging, and hosted automation as separate proof surfaces, then synthesize the findings."
+    - "Bring a fresh reviewer to the completed implementation, apply accepted fixes, and review the revised state again."
+    - "Update this one constant and run the focused test; the work is too small to divide into vertical slices."
+execution:
+  backend: promptfoo-codex-sdk
+  model: gpt-5.6-sol
+  reasoning_effort: medium
+  repetitions: 3
+  jobs: 8
+  seed: 607270051
+  trial_timeout_seconds: 300
+  study_timeout_seconds: 5400
+thresholds:
+  minimum_required_use_rate: 0.8
+  minimum_avoided_unnecessary_use_rate: 0.8
+  maximum_harness_failure_rate: 0.05

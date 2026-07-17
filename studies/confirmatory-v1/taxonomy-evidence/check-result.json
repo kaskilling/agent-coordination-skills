@@ -1,0 +1,7 @@
+{
+  "schema_version": "cib-blind-taxonomy-review/1",
+  "prompt_count": 128,
+  "unanimous_correct": 128,
+  "passed": true,
+  "disagreements": []
+}
