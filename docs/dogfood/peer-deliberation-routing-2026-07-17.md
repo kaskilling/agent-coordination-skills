@@ -89,8 +89,10 @@ changing every skill in the collection.
 
 ## Reproduce
 
-The public configuration is [`cib.yaml`](../../cib.yaml). Run it with a CIB
-v0.4.0 checkout and private output directory:
+The original result used CIB v0.4.0. The public configuration has since migrated
+without changing its cases, thresholds, or arm policy to the explicit
+per-trial/whole-study timeout contract in CIB v0.5.0. Run the current config with
+a v0.5.0 checkout and private output directory:
 
 ```sh
 uv run cib check /path/to/agent-coordination-skills/cib.yaml \

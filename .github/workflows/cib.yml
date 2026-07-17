@@ -25,7 +25,7 @@ jobs:
 
       - name: Run causal instruction check
         id: cib
-        uses: kalibraring/conditional-instruction-benchmark@2fa1021197411309a967988a3421aaafb14c1226 # v0.4.0
+        uses: kalibraring/conditional-instruction-benchmark@84126513f487df605b45f8bb4286246ba1801e5a # v0.5.0
         with:
           config: cib.yaml
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
