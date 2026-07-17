@@ -68,8 +68,8 @@ seven-trial difference came from unnecessary-use behavior: plain `if` did not
 suppress any unnecessary resource use, while the explicit negative-boundary
 arms suppressed 11/12.
 
-Promptfoo reported 3,997,645 total tokens, of which 3,182,080 were cached, over
-the 11-minute 55-second run.
+Promptfoo reported 3,997,645 total tokens, of which 3,182,080 were cached, during
+the roughly 12-minute run.
 
 ## Interpretation
 
