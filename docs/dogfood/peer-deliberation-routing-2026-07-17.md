@@ -45,8 +45,10 @@ remained unchanged. The clean rerun then completed in 718.3 seconds.
 
 ## Results
 
-All 36 trials had unique identities and exact nonce evidence. There were no
-harness failures, scorer disagreements, or identity disagreements.
+All 36 trials had unique identities and exact designated-resource scoring.
+Positive-use outcomes required the target action, unique marker, and recovered
+nonce; avoided-use outcomes required the target action to be absent. There were
+no harness failures, scorer disagreements, or identity disagreements.
 
 | Condition | Arm | Correct routes | Rate | 95% Wilson interval |
 |---|---|---:|---:|---:|
@@ -75,11 +77,11 @@ In this one task family, adding a false-case boundary changed unnecessary-use
 behavior without reducing required use. The `if and only if` wording was
 descriptively perfect here; the expanded `if + else-not` wording missed once.
 
-This is strong dogfood evidence that CIB can distinguish “the agent did it” from
-“the instruction caused the agent to do it,” and it gives a concrete reason to
-prefer strict activation language for this skill. It is not yet a general claim
-about all skills, placements, models, or future Codex versions. Six observations
-per arm also leave wide uncertainty intervals.
+This is strong dogfood evidence that CIB can distinguish the routing effect of
+an added false-case policy from positive-only `if`, and it gives a concrete
+reason to prefer strict activation language for this skill. It is not yet a
+general claim about all skills, placements, models, or future Codex versions.
+Six observations per arm also leave wide uncertainty intervals.
 
 The next confirmatory step is to freeze a larger protocol with multiple task
 families and repeat it across additional skill-description boundaries before
