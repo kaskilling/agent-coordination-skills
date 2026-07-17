@@ -10,6 +10,9 @@
 - Freeze confirmatory v3 as an outcome-aware, harness-repaired direct
   replication with signed-cache provenance, operational assignment analysis,
   adverse missing-data gates, and auditable sequential chronology.
+- Publish confirmatory v3's valid negative result: strict IFF improved relative
+  false-case routing, met the −10-point necessary-use non-inferiority gate, but
+  achieved only 29.69% absolute avoidance against the frozen 80% requirement.
 
 ## 0.2.1 - 2026-07-13
 

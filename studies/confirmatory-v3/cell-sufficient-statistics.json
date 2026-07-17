@@ -1,0 +1,3465 @@
+{
+  "schema_version": "cib-confirmatory-sufficient-statistics/1",
+  "protocol": "confirmatory-v3",
+  "freeze_tag": "confirmatory-v3-preregistered",
+  "repository_commit": "8d83d4548d2e18467e1dfa23d0c2b0aa260829f9",
+  "estimand": "end_to_end_assignment_effect_operational_itt",
+  "rows": [
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "artifact-room",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "blind-arbitration",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "gated-handoff",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "hypothesis-duel",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "peer-deliberation",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "proof-split",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "second-round",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 0,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 1,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 2,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 3,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 4,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 5,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 1,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 6,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": false,
+      "successes": 0,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "if",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": false,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "if_else_not",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": false,
+      "successes": 2,
+      "n": 3,
+      "missing": 0
+    },
+    {
+      "family": "slice-and-integrate",
+      "pair_index": 7,
+      "arm": "iff",
+      "condition_true": true,
+      "successes": 3,
+      "n": 3,
+      "missing": 0
+    }
+  ]
+}
