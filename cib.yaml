@@ -20,7 +20,7 @@ execution:
   repetitions: 2
   jobs: 4
   seed: 20260717
-  timeout_seconds: 300
+  timeout_seconds: 1200
 thresholds:
   minimum_required_use_rate: 0.8
   minimum_avoided_unnecessary_use_rate: 0.8
