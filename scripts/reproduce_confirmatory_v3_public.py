@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import math
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +13,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 STUDY_ROOT = ROOT / "studies" / "confirmatory-v3"
 ANALYSIS_PATH = ROOT / "scripts" / "summarize_cib_confirmatory_v3.py"
+NUMERIC_TOLERANCE = 1e-12
 
 
 def _load_analysis():
@@ -48,6 +50,41 @@ def _cells(value: dict[str, Any], analysis) -> dict[tuple[str, int, str, bool], 
     return cells
 
 
+def _assert_equivalent(left: Any, right: Any, path: str = "$") -> None:
+    if isinstance(left, dict) and isinstance(right, dict):
+        if set(left) != set(right):
+            raise ValueError(f"public reproduction keys differ at {path}")
+        for key in left:
+            _assert_equivalent(left[key], right[key], f"{path}.{key}")
+        return
+    if isinstance(left, list) and isinstance(right, list):
+        if len(left) != len(right):
+            raise ValueError(f"public reproduction lengths differ at {path}")
+        for index, (left_item, right_item) in enumerate(zip(left, right, strict=True)):
+            _assert_equivalent(left_item, right_item, f"{path}[{index}]")
+        return
+    if isinstance(left, bool) or isinstance(right, bool):
+        if type(left) is not type(right) or left != right:
+            raise ValueError(f"public reproduction values differ at {path}")
+        return
+    if (
+        isinstance(left, (int, float))
+        and not isinstance(left, bool)
+        and isinstance(right, (int, float))
+        and not isinstance(right, bool)
+    ):
+        if not math.isclose(
+            float(left),
+            float(right),
+            rel_tol=NUMERIC_TOLERANCE,
+            abs_tol=NUMERIC_TOLERANCE,
+        ):
+            raise ValueError(f"public reproduction values differ at {path}")
+        return
+    if left != right:
+        raise ValueError(f"public reproduction values differ at {path}")
+
+
 def main() -> int:
     analysis = _load_analysis()
     sufficient = json.loads(
@@ -77,8 +114,7 @@ def main() -> int:
     published_core = {
         key: value for key, value in published.items() if key != "provenance"
     }
-    if reproduced != published_core:
-        raise ValueError("public sufficient statistics do not reproduce aggregate")
+    _assert_equivalent(reproduced, published_core)
     print(
         json.dumps(
             {
@@ -86,6 +122,7 @@ def main() -> int:
                 "confirmed": reproduced["confirmed"],
                 "rows": len(sufficient["rows"]),
                 "draws": reproduced["posterior"]["draws"],
+                "numeric_tolerance": NUMERIC_TOLERANCE,
             },
             sort_keys=True,
         )

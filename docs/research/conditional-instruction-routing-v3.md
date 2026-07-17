@@ -221,8 +221,9 @@ warmups. The public [preregistration](../../studies/confirmatory-v3/PREREGISTRAT
 [pair-cell sufficient statistics](../../studies/confirmatory-v3/cell-sufficient-statistics.json)
 contain the public posterior inputs. Running
 [`scripts/reproduce_confirmatory_v3_public.py`](../../scripts/reproduce_confirmatory_v3_public.py)
-with the pinned analysis environment deterministically reproduces the statistical
-aggregate conditional on the published integrity and cache attestations.
+with the pinned analysis environment reproduces the statistical aggregate and
+gate decisions to `1e-12` numeric tolerance, conditional on the published
+integrity and cache attestations.
 
 Raw prompts, nonces, session IDs, transcripts, authentication data, signed
 caches, and workstation paths are intentionally excluded from publication.
